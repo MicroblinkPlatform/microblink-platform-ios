@@ -1,0 +1,379 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "mb-idv-button-try-again" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Try again"
+          }
+        }
+      }
+    },
+    "mb-idv-camera-permission-settings-button-title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Go to Settings"
+          }
+        }
+      }
+    },
+    "mb-idv-camera-permission-subtitle" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "We don’t have your permission to use the camera. To continue, please make sure that camera is enabled."
+          }
+        }
+      }
+    },
+    "mb-idv-camera-permission-title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Camera permission required"
+          }
+        }
+      }
+    },
+    "mb-idv-error-subtitle-invalid-input" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Try again, ensuring your document is fully visible and well-lit. Keep the document steady to prevent any blurriness."
+          }
+        }
+      }
+    },
+    "mb-idv-error-subtitle-retake-selfie" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Try again, making sure your eyes are open, your face is fully visible, and there’s good lighting."
+          }
+        }
+      }
+    },
+    "mb-idv-error-subtitle-unsupported-document" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Try scanning a different document."
+          }
+        }
+      }
+    },
+    "mb-idv-error-title-invalid-input" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scan again"
+          }
+        }
+      }
+    },
+    "mb-idv-error-title-no-internet" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No internet connection"
+          }
+        }
+      }
+    },
+    "mb-idv-error-title-retake-selfie" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Retake selfie"
+          }
+        }
+      }
+    },
+    "mb-idv-error-title-unsupported-document" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Document not accepted"
+          }
+        }
+      }
+    },
+    "mb-idv-error-title-verification-not-available" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verification not available"
+          }
+        }
+      }
+    },
+    "mb-idv-face-capture-center-your-face" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Center your face"
+          }
+        }
+      }
+    },
+    "mb-idv-face-capture-keep-still" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keep still"
+          }
+        }
+      }
+    },
+    "mb-idv-face-capture-look-directly-into-the-camera" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Look directly into the camera"
+          }
+        }
+      }
+    },
+    "mb-idv-face-capture-move-closer" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Move closer"
+          }
+        }
+      }
+    },
+    "mb-idv-face-capture-move-farther" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Move farther"
+          }
+        }
+      }
+    },
+    "mb-idv-face-capture-only-one-face-should-be-visible" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Only one face should be visible"
+          }
+        }
+      }
+    },
+    "mb-idv-face-capture-place-your-face-into-the-frame" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Place your face into the frame"
+          }
+        }
+      }
+    },
+    "mb-idv-loading-text" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Processing..."
+          }
+        }
+      }
+    },
+    "mb-idv-mainscreen-additional-steps-text" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "We may ask you to take additional actions to complete your verification."
+          }
+        }
+      }
+    },
+    "mb-idv-mainscreen-start-button" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Let’s start"
+          }
+        }
+      }
+    },
+    "mb-idv-mainscreen-subtitle" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This will only take a couple of minutes."
+          }
+        }
+      }
+    },
+    "mb-idv-mainscreen-title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Let’s verify your identity"
+          }
+        }
+      }
+    },
+    "mb-idv-scan-completed" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Completed"
+          }
+        }
+      }
+    },
+    "mb-idv-scan-face-subtitle" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Make sure your face is well-lit"
+          }
+        }
+      }
+    },
+    "mb-idv-scan-face-title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Take a selfie"
+          }
+        }
+      }
+    },
+    "mb-idv-scan-id-subtitle" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Go grab your ID"
+          }
+        }
+      }
+    },
+    "mb-idv-scan-id-title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scan your document"
+          }
+        }
+      }
+    },
+    "mb-idv-scan-next" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next up"
+          }
+        }
+      }
+    },
+    "mb-idv-verified-done-button-title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Done"
+          }
+        }
+      }
+    },
+    "mb-idv-verify-accept-subtitle" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thank you for proving your identity - it was you all along!"
+          }
+        }
+      }
+    },
+    "mb-idv-verify-accept-title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Identity verified!"
+          }
+        }
+      }
+    },
+    "mb-idv-verify-reject-subtitle" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "We couldn’t verify your identity this time. Please double-check your information and try again, or contact support for assistance."
+          }
+        }
+      }
+    },
+    "mb-idv-verify-reject-title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Identity not verified"
+          }
+        }
+      }
+    },
+    "mb-idv-verify-review-subtitle" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "We've got everything we need. We'll notify you as soon as it's complete."
+          }
+        }
+      }
+    },
+    "mb-idv-verify-review-title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thanks! We're verifying your identity now"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
