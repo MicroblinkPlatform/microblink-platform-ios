@@ -7,9 +7,9 @@ let package = Package(name: "IdentityVerification",
                       products: [
                         .library(name: "IdentityVerification", targets: ["IdentityVerification"])
                       ],
-                      targets: [
-                        .target(name: "IdentityVerification")
-                      ],
+//                      targets: [
+//                        .target(name: "IdentityVerification")
+//                      ],
                       dependencies: [
                         .package(url: "https://github.com/BlinkID/blinkid-verify-ios.git", exact: "3.8.0")
                       ],
