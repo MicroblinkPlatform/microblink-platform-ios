@@ -4,7 +4,7 @@
     "" : {
 
     },
-    "mb-idv-button-try-again" : {
+    "mb-mp-button-try-again" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -14,7 +14,7 @@
         }
       }
     },
-    "mb-idv-camera-permission-settings-button-title" : {
+    "mb-mp-camera-permission-settings-button-title" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -24,7 +24,7 @@
         }
       }
     },
-    "mb-idv-camera-permission-subtitle" : {
+    "mb-mp-camera-permission-subtitle" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -34,7 +34,7 @@
         }
       }
     },
-    "mb-idv-camera-permission-title" : {
+    "mb-mp-camera-permission-title" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -44,7 +44,7 @@
         }
       }
     },
-    "mb-idv-error-subtitle-invalid-input" : {
+    "mb-mp-error-subtitle-invalid-input" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -54,7 +54,7 @@
         }
       }
     },
-    "mb-idv-error-subtitle-retake-selfie" : {
+    "mb-mp-error-subtitle-retake-selfie" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -64,7 +64,7 @@
         }
       }
     },
-    "mb-idv-error-subtitle-unsupported-document" : {
+    "mb-mp-error-subtitle-unsupported-document" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -74,7 +74,7 @@
         }
       }
     },
-    "mb-idv-error-title-invalid-input" : {
+    "mb-mp-error-title-invalid-input" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -84,7 +84,7 @@
         }
       }
     },
-    "mb-idv-error-title-no-internet" : {
+    "mb-mp-error-title-no-internet" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -94,7 +94,7 @@
         }
       }
     },
-    "mb-idv-error-title-retake-selfie" : {
+    "mb-mp-error-title-retake-selfie" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -104,7 +104,7 @@
         }
       }
     },
-    "mb-idv-error-title-unsupported-document" : {
+    "mb-mp-error-title-unsupported-document" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -114,7 +114,7 @@
         }
       }
     },
-    "mb-idv-error-title-verification-not-available" : {
+    "mb-mp-error-title-verification-not-available" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -124,7 +124,7 @@
         }
       }
     },
-    "mb-idv-face-capture-center-your-face" : {
+    "mb-mp-face-capture-center-your-face" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -134,7 +134,7 @@
         }
       }
     },
-    "mb-idv-face-capture-keep-still" : {
+    "mb-mp-face-capture-keep-still" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -144,7 +144,7 @@
         }
       }
     },
-    "mb-idv-face-capture-look-directly-into-the-camera" : {
+    "mb-mp-face-capture-look-directly-into-the-camera" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -154,7 +154,7 @@
         }
       }
     },
-    "mb-idv-face-capture-move-closer" : {
+    "mb-mp-face-capture-move-closer" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -164,7 +164,7 @@
         }
       }
     },
-    "mb-idv-face-capture-move-farther" : {
+    "mb-mp-face-capture-move-farther" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -174,7 +174,7 @@
         }
       }
     },
-    "mb-idv-face-capture-only-one-face-should-be-visible" : {
+    "mb-mp-face-capture-only-one-face-should-be-visible" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -184,7 +184,7 @@
         }
       }
     },
-    "mb-idv-face-capture-place-your-face-into-the-frame" : {
+    "mb-mp-face-capture-place-your-face-into-the-frame" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -194,7 +194,7 @@
         }
       }
     },
-    "mb-idv-loading-text" : {
+    "mb-mp-loading-text" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -204,7 +204,7 @@
         }
       }
     },
-    "mb-idv-mainscreen-additional-steps-text" : {
+    "mb-mp-mainscreen-additional-steps-text" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -214,7 +214,7 @@
         }
       }
     },
-    "mb-idv-mainscreen-start-button" : {
+    "mb-mp-mainscreen-start-button" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -224,7 +224,7 @@
         }
       }
     },
-    "mb-idv-mainscreen-subtitle" : {
+    "mb-mp-mainscreen-subtitle" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -234,7 +234,7 @@
         }
       }
     },
-    "mb-idv-mainscreen-title" : {
+    "mb-mp-mainscreen-title" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -244,7 +244,7 @@
         }
       }
     },
-    "mb-idv-scan-completed" : {
+    "mb-mp-scan-completed" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -254,7 +254,7 @@
         }
       }
     },
-    "mb-idv-scan-face-subtitle" : {
+    "mb-mp-scan-face-subtitle" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -264,7 +264,7 @@
         }
       }
     },
-    "mb-idv-scan-face-title" : {
+    "mb-mp-scan-face-title" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -274,7 +274,7 @@
         }
       }
     },
-    "mb-idv-scan-id-subtitle" : {
+    "mb-mp-scan-id-subtitle" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -284,7 +284,7 @@
         }
       }
     },
-    "mb-idv-scan-id-title" : {
+    "mb-mp-scan-id-title" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -294,7 +294,7 @@
         }
       }
     },
-    "mb-idv-scan-next" : {
+    "mb-mp-scan-next" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -304,7 +304,7 @@
         }
       }
     },
-    "mb-idv-verified-done-button-title" : {
+    "mb-mp-verified-done-button-title" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -314,7 +314,7 @@
         }
       }
     },
-    "mb-idv-verify-accept-subtitle" : {
+    "mb-mp-verify-accept-subtitle" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -324,7 +324,7 @@
         }
       }
     },
-    "mb-idv-verify-accept-title" : {
+    "mb-mp-verify-accept-title" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -334,7 +334,7 @@
         }
       }
     },
-    "mb-idv-verify-reject-subtitle" : {
+    "mb-mp-verify-reject-subtitle" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -344,7 +344,7 @@
         }
       }
     },
-    "mb-idv-verify-reject-title" : {
+    "mb-mp-verify-reject-title" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -354,7 +354,7 @@
         }
       }
     },
-    "mb-idv-verify-review-subtitle" : {
+    "mb-mp-verify-review-subtitle" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -364,7 +364,7 @@
         }
       }
     },
-    "mb-idv-verify-review-title" : {
+    "mb-mp-verify-review-title" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {

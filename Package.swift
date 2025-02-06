@@ -2,19 +2,19 @@
 
 import PackageDescription
 
-let package = Package(name: "IdentityVerification",
+let package = Package(name: "MicroblinkPlatform",
                       platforms: [.iOS(.v16)],
                       products: [
-                        .library(name: "IdentityVerification", targets: ["IdentityVerification"])
+                        .library(name: "MicroblinkPlatform", targets: ["MicroblinkPlatform"])
                       ],
 //                      targets: [
-//                        .target(name: "IdentityVerification")
+//                        .target(name: "MicroblinkPlatform")
 //                      ],
                       dependencies: [
                         .package(url: "https://github.com/BlinkID/blinkid-verify-ios.git", exact: "3.8.0")
                       ],
                       targets: [
-                        .target(name: "IdentityVerification", dependencies: ["BlinkIDVerifyUX", "BlinkIDVerify"]),
+                        .target(name: "MicroblinkPlatform", dependencies: ["BlinkIDVerifyUX", "BlinkIDVerify"]),
                         .binaryTarget(name: "IDLiveFaceCamera", path: "Frameworks/IDLiveFaceCamera.xcframework"),
                         .binaryTarget(name: "IDLiveFaceIAD", path: "Frameworks/IDLiveFaceIAD.xcframework")
                       ],
