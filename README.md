@@ -149,15 +149,7 @@ struct MicroblinkPlatformWrapperView: UIViewControllerRepresentable {
         Coordinator(onCompletion: onCompletion, onClose: onClose)
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     class Coordinator: NSObject, MicroblinkPlatformSDKDelegate {
-=======
-    class Coordinator: NSObject, MicroblinkPlatformResultSDKDelegate {
->>>>>>> 34a78e1 (update readme)
-=======
-    class Coordinator: NSObject, MicroblinkPlatformSDKDelegate {
->>>>>>> f477497 (update readme)
         var onCompletion: (MicroblinkPlatformResult) -> Void
         var onClose: () -> Void
 
