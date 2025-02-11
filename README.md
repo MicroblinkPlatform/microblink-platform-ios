@@ -6,8 +6,7 @@
 
 # MicroblinkPlatform SDK for iOS
 
-> [!CAUTION]
-> Add description.
+Microblink Platform Browser SDK enables seamless and secure user authentication by integrating advanced identity verification features, such as document scanning, facial recognition, and real-time validation, into your application. It helps businesses ensure compliance, prevent fraud, and enhance user trust with minimal development effort.
 
 ## Table Of Contents
 
@@ -17,13 +16,12 @@ MicroblinkPlatform SDK requires iOS 16.0+.
 
 ## MicroblinkPlatform Server compatibility
 
+In order to use the SDK, you need to define a proxy service which will be used to communicate with the Microblink Platform. This service should be used to forward requests from the SDK to the Microblink Platform and back in order to start the transaction. The service should be implemented on your side and SDK will use it to communicate with the platform.
+
 > [!IMPORTANT]
 > To use our API, you will need an `workflowId` and `authProviderHost`. Please reach out to us to obtain these credentials.
 
 Make sure that you use a compatible Workflow version for the MicroblinkPlatform iOS library version that you use.
-
-> [!CAUTION]
-> Add more info.
 
 ## SDK integration
 
