@@ -6,7 +6,7 @@
 
 # MicroblinkPlatform SDK for iOS
 
-Microblink Platform Browser SDK enables seamless and secure user authentication by integrating advanced identity verification features, such as document scanning, facial recognition, and real-time validation, into your application. It helps businesses ensure compliance, prevent fraud, and enhance user trust with minimal development effort.
+Microblink Platform iOS SDK enables seamless and secure user authentication by integrating advanced identity verification features, such as document scanning, facial recognition, and real-time validation, into your application. It helps businesses ensure compliance, prevent fraud, and enhance user trust with minimal development effort.
 
 ## Table Of Contents
 
