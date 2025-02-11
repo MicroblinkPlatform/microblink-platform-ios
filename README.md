@@ -10,6 +10,16 @@ Microblink Platform iOS SDK enables seamless and secure user authentication by i
 
 ## Table Of Contents
 
+  - [Requirements](#requirements)
+  - [MicroblinkPlatform Server compatibility](#microblinkplatform-server-compatibility)
+  - [SDK integration](#sdk-integration)
+    - [Swift Package Manager](#swift-package-manager)
+    - [Clone](#clone)
+    - [UIKit](#uikit)
+    - [SwiftUI](#swiftui)
+  - [Changing default strings](#changing-default-strings)
+  - [Customizing the look](#customizing-the-look)
+
 ## Requirements
 
 MicroblinkPlatform SDK requires iOS 16.0+.
