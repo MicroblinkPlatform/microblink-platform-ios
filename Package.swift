@@ -9,15 +9,25 @@ let package = Package(
     products: [
         .library(
             name: "MicroblinkPlatform",
-            targets: ["MicroblinkPlatform"]),
+            targets: ["MicroblinkPlatform"]
+        ),
         .library(
             name: "IDLiveFaceCamera",
-            targets: ["IDLiveFaceCamera"]),
+            targets: ["IDLiveFaceCamera"]
+        ),
         .library(
             name: "IDLiveFaceIAD",
-            targets: ["IDLiveFaceIAD"])
+            targets: ["IDLiveFaceIAD"]
+        ),
+        .library(
+            name: "BlinkIDVerifyWrapper",
+            targets: ["BlinkIDVerifyWrapper"]
+        )
+
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url: "https://github.com/BlinkID/blinkid-verify-ios", .upToNextMinor(from: "3.8.0"))
+    ],
     targets: [
         .binaryTarget(
             name: "MicroblinkPlatform",
@@ -30,7 +40,13 @@ let package = Package(
         .binaryTarget(
             name: "IDLiveFaceIAD",
             path: "Frameworks/IDLiveFaceIAD.xcframework"
+        ),
+        .target(
+            name: "BlinkIDVerifyWrapper",
+            dependencies: [
+                .product(name: "BlinkIDVerifyUX", package: "blinkid-verify-ios")
+            ],
+            path: "Sources/BlinkIDVerifyWrapper"
         )
-    ],
-    swiftLanguageModes: [.v5]
+    ]
 )
