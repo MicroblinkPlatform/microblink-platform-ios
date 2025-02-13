@@ -2,7 +2,8 @@
   <img src="https://raw.githubusercontent.com/wiki/blinkid/blinkid-ios/Images/logo-microblink.png" alt="Microblink Logo" title="Microblink Logo">
 </p>
 
-[![SwiftPM compatible](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg)](https://swift.org/package-manager/)
+[![Platform](https://img.shields.io/badge/Platform-iOS-blue?style=flat-square)](https://img.shields.io/badge/Platform-iOS-blue?style=flat-square)
+[![Swift Package Manager Compatible](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat-square)](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat-square)
 
 # MicroblinkPlatform SDK for iOS
 
