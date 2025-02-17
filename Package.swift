@@ -33,6 +33,10 @@ let package = Package(
             name: "MicroblinkPlatform",
             path: "Frameworks/MicroblinkPlatform.xcframework"
         ),
+        //        .binaryTarget(
+        //            name: "MicroblinkPlatform",
+        //            url: "https://github.com/MicroblinkPlatform/microblink-platform-ios/releases/download/v1.0.0/MicroblinkPlatform.xcframework.zip",
+        //            checksum: ""),
         .binaryTarget(
             name: "IDLiveFaceCamera",
             path: "Frameworks/IDLiveFaceCamera.xcframework"
