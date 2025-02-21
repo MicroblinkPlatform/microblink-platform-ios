@@ -26,7 +26,7 @@ let package = Package(
 
     ],
     dependencies: [
-        .package(url: "https://github.com/BlinkID/blinkid-verify-ios", .upToNextMinor(from: "3.8.1"))
+        .package(url: "https://github.com/BlinkID/blinkid-verify-ios", exact: "3.8.1")
     ],
     targets: [
         .binaryTarget(
