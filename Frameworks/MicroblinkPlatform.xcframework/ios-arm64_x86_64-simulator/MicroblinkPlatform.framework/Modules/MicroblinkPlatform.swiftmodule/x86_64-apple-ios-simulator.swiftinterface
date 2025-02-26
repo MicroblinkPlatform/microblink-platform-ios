@@ -18,6 +18,8 @@ import _SwiftConcurrencyShims
 
 
 public struct MicroblinkPlatformResult {
+  public let status: MicroblinkPlatform.MicroblinkPlatformResultStatus
+  public let transactionId: Swift.String
 }
 public enum MicroblinkPlatformResultStatus {
   case accept, review, reject

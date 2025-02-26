@@ -423,6 +423,96 @@
         "kind": "TypeDecl",
         "name": "MicroblinkPlatformResult",
         "printedName": "MicroblinkPlatformResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "status",
+            "printedName": "status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MicroblinkPlatformResultStatus",
+                "printedName": "MicroblinkPlatform.MicroblinkPlatformResultStatus",
+                "usr": "s:18MicroblinkPlatform0aB12ResultStatusO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MicroblinkPlatform0aB6ResultV6statusAA0abC6StatusOvp",
+            "mangledName": "$s18MicroblinkPlatform0aB6ResultV6statusAA0abC6StatusOvp",
+            "moduleName": "MicroblinkPlatform",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MicroblinkPlatformResultStatus",
+                    "printedName": "MicroblinkPlatform.MicroblinkPlatformResultStatus",
+                    "usr": "s:18MicroblinkPlatform0aB12ResultStatusO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MicroblinkPlatform0aB6ResultV6statusAA0abC6StatusOvg",
+                "mangledName": "$s18MicroblinkPlatform0aB6ResultV6statusAA0abC6StatusOvg",
+                "moduleName": "MicroblinkPlatform",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "transactionId",
+            "printedName": "transactionId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MicroblinkPlatform0aB6ResultV13transactionIdSSvp",
+            "mangledName": "$s18MicroblinkPlatform0aB6ResultV13transactionIdSSvp",
+            "moduleName": "MicroblinkPlatform",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MicroblinkPlatform0aB6ResultV13transactionIdSSvg",
+                "mangledName": "$s18MicroblinkPlatform0aB6ResultV13transactionIdSSvg",
+                "moduleName": "MicroblinkPlatform",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
         "declKind": "Struct",
         "usr": "s:18MicroblinkPlatform0aB6ResultV",
         "mangledName": "$s18MicroblinkPlatform0aB6ResultV",

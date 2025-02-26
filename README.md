@@ -45,14 +45,6 @@ Make sure that you use a compatible Workflow version for the MicroblinkPlatform 
 
 If you prefer not to use Swift Package Manager, you can integrate MicroblinkPlatform into your project manually.
 
-Since the libraries are stored on [Git Large File Storage](https://git-lfs.github.com), you need to install git-lfs by running these commands:
-```shell
-brew install git-lfs
-git lfs install
-```
-
-**Be sure to restart your console after installing Git LFS**
-
 Manually import xcframeworks from `Frameworks` folder.
 
 Additionally, clone [BlinkIDVerify repository](https://github.com/BlinkID/blinkid-verify-ios) to use `BlinkIDVerifyUX` and `BlinkIDVerify` xcframeworks.  
@@ -61,9 +53,8 @@ Additionally, clone [BlinkIDVerify repository](https://github.com/BlinkID/blinki
 
 ```swift
 import MicroblinkPlatform
-```
+import UIKit
 
-```swift
 let serviceSettings = MicroblinkPlatformServiceSettings(
     workflowId: your-workflow-id,
     authProviderHost: your_host_url,
@@ -97,10 +88,8 @@ func microblinkPlatformSDKDidClose(viewController: UIViewController) {
 ### SwiftUI
 
 ```swift
-import MicroblinkPlatform
-```
+import SwiftUI
 
-```swift
 struct ContentView: View {
     @State private var showSDK = false
 
@@ -109,7 +98,7 @@ struct ContentView: View {
             showSDK = true
         }
         .fullScreenCover(isPresented: $showSDK) {
-            MicroblinkPlatformWrapperView(workflowId: your-workflow-id, authProviderHost: your_host_url, additionalRequestHeaders: nil ) { result in
+            MicroblinkPlatformWrapperView(workflowId: your-workflow-id, authProviderHost: your_host_url, additionalRequestHeaders: nil) { microblinkPlatfromResult in
                 showSDK = false
             } onClose: {
                 showSDK = false
@@ -120,6 +109,9 @@ struct ContentView: View {
 ```
 
 ```swift
+import MicroblinkPlatform
+import SwiftUI
+
 struct MicroblinkPlatformWrapperView: UIViewControllerRepresentable {
     let workflowId: String
     let authProviderHost: String
