@@ -1,3 +1,6 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a9f4242f8ea7aafc9d5bc67a89d74a8ba69c564fdb144c6fc89376a5668b282e
-size 117
+framework module MicroblinkPlatform {
+  umbrella header "MicroblinkPlatform.h"
+  export *
+
+  module * { export * }
+}

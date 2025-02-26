@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:68d6b1cb9799d03e3443a0b4a3f599f6c04ccfb35816a9f30cffec81032f0bb7
-size 551
+//
+//  IDCameraController.h
+//  IDCameraController
+//
+//  Created by idrnd on 5/14/20.
+//  Copyright © 2020 idrnd. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+//! Project version number for IDCameraController.
+FOUNDATION_EXPORT double IDLiveFaceCameraVersionNumber;
+
+//! Project version string for IDCameraController.
+FOUNDATION_EXPORT const unsigned char IDLiveFaceCameraVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <IDCameraController/PublicHeader.h>

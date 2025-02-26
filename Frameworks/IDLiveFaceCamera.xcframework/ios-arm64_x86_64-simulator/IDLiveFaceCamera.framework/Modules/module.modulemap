@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a27c2daaae2b8c950dcb02913a0a10564ae68236c5c95bba30fede7e6e714067
-size 200
+framework module IDLiveFaceCamera {
+  umbrella header "IDLiveFaceCamera.h"
+  export *
+
+  module * { export * }
+}
+
+module IDLiveFaceCamera.Swift {
+  header "IDLiveFaceCamera-Swift.h"
+  requires objc
+}

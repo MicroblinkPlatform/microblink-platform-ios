@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:decec7e1462dfccbdc09c0fa62cdb623bd284b2d94a5c28e7dfac643e4777cb7
-size 188
+framework module IDLiveFaceIAD {
+  umbrella header "IDLiveFaceIAD.h"
+  export *
+
+  module * { export * }
+}
+
+module IDLiveFaceIAD.Swift {
+  header "IDLiveFaceIAD-Swift.h"
+  requires objc
+}

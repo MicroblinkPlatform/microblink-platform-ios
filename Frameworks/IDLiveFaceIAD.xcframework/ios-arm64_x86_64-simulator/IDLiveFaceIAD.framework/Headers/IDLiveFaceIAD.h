@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:83e1889ba49789eb37dc07e98a758069e25585e36cf29f48b22d410d2d9832eb
-size 473
+//
+//  IDLiveFaceIAD.h
+//  IDLiveFaceIAD
+//
+//  Created by idrnd on 11/11/22.
+//
+
+#import <Foundation/Foundation.h>
+
+//! Project version number for IDLiveFaceIAD.
+FOUNDATION_EXPORT double IDLiveFaceIADVersionNumber;
+
+//! Project version string for IDLiveFaceIAD.
+FOUNDATION_EXPORT const unsigned char IDLiveFaceIADVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <IDLiveFaceIAD/PublicHeader.h>
+
+
