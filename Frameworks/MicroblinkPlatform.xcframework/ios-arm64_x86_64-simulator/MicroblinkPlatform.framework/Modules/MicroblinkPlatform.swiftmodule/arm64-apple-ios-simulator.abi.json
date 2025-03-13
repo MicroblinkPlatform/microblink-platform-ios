@@ -6,16 +6,6 @@
     "children": [
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -408,6 +398,99 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MicroblinkPlatformConsent",
+        "printedName": "MicroblinkPlatformConsent",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(userId:isProcessingStoringAllowed:isTrainingAllowed:note:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MicroblinkPlatformConsent",
+                "printedName": "MicroblinkPlatform.MicroblinkPlatformConsent",
+                "usr": "s:18MicroblinkPlatform0aB7ConsentV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18MicroblinkPlatform0aB7ConsentV6userId26isProcessingStoringAllowed0f8TrainingI04noteACSS_S2bSSSgtcfc",
+            "mangledName": "$s18MicroblinkPlatform0aB7ConsentV6userId26isProcessingStoringAllowed0f8TrainingI04noteACSS_S2bSSSgtcfc",
+            "moduleName": "MicroblinkPlatform",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18MicroblinkPlatform0aB7ConsentV",
+        "mangledName": "$s18MicroblinkPlatform0aB7ConsentV",
+        "moduleName": "MicroblinkPlatform",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -1012,7 +1095,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(workflowId:authProviderHost:additionalRequestHeaders:)",
+            "printedName": "init(workflowId:authProviderHost:consent:additionalRequestHeaders:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1031,6 +1114,12 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MicroblinkPlatformConsent",
+                "printedName": "MicroblinkPlatform.MicroblinkPlatformConsent",
+                "usr": "s:18MicroblinkPlatform0aB7ConsentV"
               },
               {
                 "kind": "TypeNominal",
@@ -1063,8 +1152,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:18MicroblinkPlatform0aB15ServiceSettingsC10workflowId16authProviderHost24additionalRequestHeadersACSS_SSSDyS2SGSgtcfc",
-            "mangledName": "$s18MicroblinkPlatform0aB15ServiceSettingsC10workflowId16authProviderHost24additionalRequestHeadersACSS_SSSDyS2SGSgtcfc",
+            "usr": "s:18MicroblinkPlatform0aB15ServiceSettingsC10workflowId16authProviderHost7consent24additionalRequestHeadersACSS_SSAA0aB7ConsentVSDyS2SGSgtcfc",
+            "mangledName": "$s18MicroblinkPlatform0aB15ServiceSettingsC10workflowId16authProviderHost7consent24additionalRequestHeadersACSS_SSAA0aB7ConsentVSDyS2SGSgtcfc",
             "moduleName": "MicroblinkPlatform",
             "declAttributes": [
               "AccessControl"
@@ -5003,6 +5092,16 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -5106,7 +5205,7 @@
     {
       "filePath": "\/Users\/tcvetkovic\/Developer\/Microblink\/IDV\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseError\/BaseErrorViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2244,
+      "offset": 2309,
       "length": 5,
       "value": "false"
     },

@@ -54,6 +54,16 @@
         }
       }
     },
+    "mb-mp-error-subtitle-no-internet" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "There was a problem with your network. Check your data or wifi connection."
+          }
+        }
+      }
+    },
     "mb-mp-error-subtitle-retake-selfie" : {
       "localizations" : {
         "en" : {

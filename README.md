@@ -40,6 +40,7 @@ Make sure that you use a compatible Workflow version for the MicroblinkPlatform 
 
 - File > Swift Packages > Add Package Dependency
 - Add https://github.com/MicroblinkPlatform/microblink-platform-ios.git
+- Select **Exact Version** - 1.0.0
 
 ### Clone
 
@@ -55,9 +56,17 @@ Additionally, clone [BlinkIDVerify repository](https://github.com/BlinkID/blinki
 import MicroblinkPlatform
 import UIKit
 
+let consent = MicroblinkPlatformConsent(
+    userId: user_id,
+    isProcessingStoringAllowed: true,
+    isTrainingAllowed: true,
+    note: nil
+)
+        
 let serviceSettings = MicroblinkPlatformServiceSettings(
     workflowId: your-workflow-id,
     authProviderHost: your_host_url,
+    consent: consent,
     additionalRequestHeaders: nil
 )
         
@@ -73,10 +82,11 @@ present(viewController, animated: true)
 
 Verification results are returned via `MicroblinkPlatformSDKDelegate`.
 
-`MicroblinkPlatformResult` can be: accept, review, reject
-
 ```swift
 func microblinkPlatformSDKDidFinish(viewController: UIViewController, result: MicroblinkPlatformResult) {
+    // `MicroblinkPlatformResult` has:
+    // - status enum that returns: accept, review, reject
+    // - transactionId string
     viewController.dismiss(animated: true)
 }
     
@@ -129,9 +139,17 @@ struct MicroblinkPlatformWrapperView: UIViewControllerRepresentable {
     }
     
     func makeUIViewController(context: Context) -> UIViewController {
+        let consent = MicroblinkPlatformConsent(
+            userId: user_id,
+            isProcessingStoringAllowed: true,
+            isTrainingAllowed: true,
+            note: nil
+        )
+        
         let serviceSettings = MicroblinkPlatformServiceSettings(
             workflowId: workflowId,
             authProviderHost: authProviderHost,
+            consent: consent,
             additionalRequestHeaders: additionalRequestHeaders
         )
 
@@ -150,6 +168,7 @@ struct MicroblinkPlatformWrapperView: UIViewControllerRepresentable {
         Coordinator(onCompletion: onCompletion, onClose: onClose)
     }
 
+    // Verification results are returned via `MicroblinkPlatformSDKDelegate`.
     class Coordinator: NSObject, MicroblinkPlatformSDKDelegate {
         var onCompletion: (MicroblinkPlatformResult) -> Void
         var onClose: () -> Void
@@ -160,6 +179,9 @@ struct MicroblinkPlatformWrapperView: UIViewControllerRepresentable {
         }
 
         func microblinkPlatformSDKDidFinish(viewController: UIViewController, result: MicroblinkPlatformResult) {
+            // `MicroblinkPlatformResult` has:
+            // - status enum that returns: accept, review, reject
+            // - transactionId string
             viewController.dismiss(animated: true) {
                 self.onCompletion(result)
             }

@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/MicroblinkPlatform.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		bAswakkz6WtF6M3gYZN9nkt71Ko=
+		ff8fyB8dWnLbCZx4ySg1WG5wjS0=
 		</data>
 		<key>Modules/MicroblinkPlatform.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Qma0WyJs/ArEvzM4G0/2mOVpmaM=
+		kVrfruZ+UV/TPtIvl3SA/f283Dg=
 		</data>
 		<key>Modules/MicroblinkPlatform.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/MicroblinkPlatform.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Qma0WyJs/ArEvzM4G0/2mOVpmaM=
+		kVrfruZ+UV/TPtIvl3SA/f283Dg=
 		</data>
 		<key>Modules/MicroblinkPlatform.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		rSvwFyFXKJ+KY2v+4BK5lPAiBx8=
+		AOsmaMUm/VWsHItfTNeLPvz6Okw=
 		</data>
 		<key>Modules/MicroblinkPlatform.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		bAswakkz6WtF6M3gYZN9nkt71Ko=
+		ff8fyB8dWnLbCZx4ySg1WG5wjS0=
 		</data>
 		<key>Modules/MicroblinkPlatform.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		MsogjAwuqyGq73LobgW16VZDnhI=
+		TClq7RJg+GlFSFS+vfanWhAJBT4=
 		</data>
 		<key>Modules/MicroblinkPlatform.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/MicroblinkPlatform.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		MsogjAwuqyGq73LobgW16VZDnhI=
+		TClq7RJg+GlFSFS+vfanWhAJBT4=
 		</data>
 		<key>Modules/MicroblinkPlatform.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		mPkP8Y8B7rvbnh8O25tXC/gzeWs=
+		taCtuayO/GKr+1oTR4NgyQ6M8dI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -68,7 +68,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GNhpsBUYwrhBFBqnXv8F1WnlbKc=
+			fh6BlmsexI0GKud8/f56oREJo64=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -94,14 +94,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			A5dEg7orTIep9qVpxb7Lcelgx1+sMe5MjxDTwgasC+4=
+			fLUEROtwOksnzJ7eOXMHrH8AF+M9m2s3j7LKMd9uU/A=
 			</data>
 		</dict>
 		<key>Modules/MicroblinkPlatform.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vAg79/FdV5BbnUMfB3cZdtRMbl1M5Pl8XJqvhe+zMvg=
+			+fRr1qdniYTvaXuFBNDmspuzH1BHR1CaBEK0i97sm9E=
 			</data>
 		</dict>
 		<key>Modules/MicroblinkPlatform.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -115,28 +115,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vAg79/FdV5BbnUMfB3cZdtRMbl1M5Pl8XJqvhe+zMvg=
+			+fRr1qdniYTvaXuFBNDmspuzH1BHR1CaBEK0i97sm9E=
 			</data>
 		</dict>
 		<key>Modules/MicroblinkPlatform.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ljqbLN+qITn+0F/rIDrnXWsiuwTYfJXh9wqYDbHQWVY=
+			/FPaGaHskbi/lQCZb6Agmg/S7rIZOOK1AdLqgwixQIE=
 			</data>
 		</dict>
 		<key>Modules/MicroblinkPlatform.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A5dEg7orTIep9qVpxb7Lcelgx1+sMe5MjxDTwgasC+4=
+			fLUEROtwOksnzJ7eOXMHrH8AF+M9m2s3j7LKMd9uU/A=
 			</data>
 		</dict>
 		<key>Modules/MicroblinkPlatform.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sp1sWbUhtrm92fZS3IoLlFTwp5Bapu6+gTlNH1jzCDA=
+			y9RpyrHnpLraQAqG2YdHC7DOVd+Sd2bHOaiblbgpTE0=
 			</data>
 		</dict>
 		<key>Modules/MicroblinkPlatform.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -150,14 +150,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sp1sWbUhtrm92fZS3IoLlFTwp5Bapu6+gTlNH1jzCDA=
+			y9RpyrHnpLraQAqG2YdHC7DOVd+Sd2bHOaiblbgpTE0=
 			</data>
 		</dict>
 		<key>Modules/MicroblinkPlatform.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2z6a4sTub39lgDODGQlQsFmMXpHFHOwgp27V5TLd4CE=
+			wtMZ2idvA/3d+gKDERje0cDnRROsEVrxcE8aW0bDZyw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -178,7 +178,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8d5THMTREMLc3gj/05V5NaotG14v5K7U5NRJDqMIOU8=
+			qMhHHrNxB2sURsYOXYwHGRjReeEOstx13lu4H+Obt7I=
 			</data>
 			<key>optional</key>
 			<true/>

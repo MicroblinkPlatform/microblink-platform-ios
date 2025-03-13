@@ -17,6 +17,9 @@ import _SwiftConcurrencyShims
 
 
 
+public struct MicroblinkPlatformConsent {
+  public init(userId: Swift.String, isProcessingStoringAllowed: Swift.Bool, isTrainingAllowed: Swift.Bool, note: Swift.String?)
+}
 public struct MicroblinkPlatformResult {
   public let status: MicroblinkPlatform.MicroblinkPlatformResultStatus
   public let transactionId: Swift.String
@@ -39,7 +42,7 @@ final public class MicroblinkPlatformSDK {
   @objc deinit
 }
 final public class MicroblinkPlatformServiceSettings {
-  public init(workflowId: Swift.String, authProviderHost: Swift.String, additionalRequestHeaders: [Swift.String : Swift.String]? = nil)
+  public init(workflowId: Swift.String, authProviderHost: Swift.String, consent: MicroblinkPlatform.MicroblinkPlatformConsent, additionalRequestHeaders: [Swift.String : Swift.String]? = nil)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class MicroblinkPlatformTheme {
