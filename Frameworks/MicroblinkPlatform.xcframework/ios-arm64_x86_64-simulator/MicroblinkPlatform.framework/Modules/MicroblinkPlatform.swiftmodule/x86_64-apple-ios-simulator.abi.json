@@ -111,6 +111,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -5394,7 +5404,7 @@
     {
       "filePath": "\/Users\/tcvetkovic\/Developer\/Microblink\/IDV\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/StepsContainer\/StepsContainerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8607,
+      "offset": 14327,
       "length": 5,
       "value": "false"
     },
