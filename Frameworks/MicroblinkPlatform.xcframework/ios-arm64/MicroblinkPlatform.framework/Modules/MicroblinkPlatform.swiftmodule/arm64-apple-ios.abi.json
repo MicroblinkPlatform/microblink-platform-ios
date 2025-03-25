@@ -111,16 +111,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -5262,6 +5252,13 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/tcvetkovic\/Developer\/Microblink\/IDV\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/Extensions\/UIImage+MicroblinkPlatform.swift",
+      "kind": "FloatLiteral",
+      "offset": 94,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
       "filePath": "\/Users\/tcvetkovic\/Developer\/Microblink\/IDV\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FaceCapture\/FaceShapeOverlayView.swift",
       "kind": "FloatLiteral",
       "offset": 210,
@@ -5404,7 +5401,7 @@
     {
       "filePath": "\/Users\/tcvetkovic\/Developer\/Microblink\/IDV\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/StepsContainer\/StepsContainerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 14327,
+      "offset": 8725,
       "length": 5,
       "value": "false"
     },
