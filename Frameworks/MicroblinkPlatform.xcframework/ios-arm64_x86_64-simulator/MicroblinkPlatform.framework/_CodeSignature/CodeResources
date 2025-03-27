@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/MicroblinkPlatform.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		WAwwWo2ngq4z4sHhQrSVxdhMORU=
+		oYywixuPHayiPkRWJrujyXXKx3M=
 		</data>
 		<key>Modules/MicroblinkPlatform.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/MicroblinkPlatform.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		WAwwWo2ngq4z4sHhQrSVxdhMORU=
+		oYywixuPHayiPkRWJrujyXXKx3M=
 		</data>
 		<key>Modules/MicroblinkPlatform.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -94,7 +94,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nL+OGlhccZz9bAxDYVMYY657F95x4c9lCk4DJ8kTrtM=
+			eQGVmTFNb2YB5sTtZeMi/cu5xRhVYPt/rKnef+9i0U4=
 			</data>
 		</dict>
 		<key>Modules/MicroblinkPlatform.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -129,7 +129,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nL+OGlhccZz9bAxDYVMYY657F95x4c9lCk4DJ8kTrtM=
+			eQGVmTFNb2YB5sTtZeMi/cu5xRhVYPt/rKnef+9i0U4=
 			</data>
 		</dict>
 		<key>Modules/MicroblinkPlatform.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
