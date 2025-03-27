@@ -18,11 +18,11 @@
 		</data>
 		<key>ios-arm64/MicroblinkPlatform.framework/MicroblinkPlatform</key>
 		<data>
-		KrTZO8EjOr604fThrT6HOFsyWhA=
+		kJZf+xpsDXi6T1jNPP28KMStWPU=
 		</data>
 		<key>ios-arm64/MicroblinkPlatform.framework/Modules/MicroblinkPlatform.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		MVk3lh0gP/mfS6d4gGxdgkCUb4M=
+		XVYgLSaNta80WhSx/14ag4C928I=
 		</data>
 		<key>ios-arm64/MicroblinkPlatform.framework/Modules/MicroblinkPlatform.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -67,11 +67,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MicroblinkPlatform.framework/MicroblinkPlatform</key>
 		<data>
-		Yh+VcRCx2Y+bsT8EaCQqMCf6WnA=
+		rTlABjGMhgjKK/Es+6lJaHWTdhU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MicroblinkPlatform.framework/Modules/MicroblinkPlatform.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		kmsX4jsuhuznQRKFjQ9nCB8SVSg=
+		WAwwWo2ngq4z4sHhQrSVxdhMORU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MicroblinkPlatform.framework/Modules/MicroblinkPlatform.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -87,7 +87,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MicroblinkPlatform.framework/Modules/MicroblinkPlatform.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		kmsX4jsuhuznQRKFjQ9nCB8SVSg=
+		WAwwWo2ngq4z4sHhQrSVxdhMORU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MicroblinkPlatform.framework/Modules/MicroblinkPlatform.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -111,7 +111,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MicroblinkPlatform.framework/_CodeSignature/CodeResources</key>
 		<data>
-		F4It//rX5vFA9bCx0pn/9io0bg4=
+		N4gFrE/EUfdl5geVjWiMpblpOFY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MicroblinkPlatform.framework/en.lproj/Localizable.strings</key>
 		<dict>
@@ -162,22 +162,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KrTZO8EjOr604fThrT6HOFsyWhA=
+			kJZf+xpsDXi6T1jNPP28KMStWPU=
 			</data>
 			<key>hash2</key>
 			<data>
-			gG+loDm43sVgsvRjYsUaq7OSClzl7UqMIbpk4H4pJs4=
+			MBjJ9WD+zO8vqM1WstZBpGKtplRHn3Y2DzFTn7vEWas=
 			</data>
 		</dict>
 		<key>ios-arm64/MicroblinkPlatform.framework/Modules/MicroblinkPlatform.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MVk3lh0gP/mfS6d4gGxdgkCUb4M=
+			XVYgLSaNta80WhSx/14ag4C928I=
 			</data>
 			<key>hash2</key>
 			<data>
-			Rta/0Hxdxx6gZoZAKAvhcUBbewug8g3sWs4jeRXOM98=
+			n83Xw3TP0cKpe2mgocBWAaiMtnITdc7hcFf9L3Fq0iw=
 			</data>
 		</dict>
 		<key>ios-arm64/MicroblinkPlatform.framework/Modules/MicroblinkPlatform.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -285,22 +285,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Yh+VcRCx2Y+bsT8EaCQqMCf6WnA=
+			rTlABjGMhgjKK/Es+6lJaHWTdhU=
 			</data>
 			<key>hash2</key>
 			<data>
-			aXUhF3VSDc2i1XI7lJ/b3823ki4jHHseJ+Hz4lq5TNk=
+			h+7ZFkujSGURuPXwtqSQZFeJ6W6q2GcFlwA5/YxsZoU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MicroblinkPlatform.framework/Modules/MicroblinkPlatform.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kmsX4jsuhuznQRKFjQ9nCB8SVSg=
+			WAwwWo2ngq4z4sHhQrSVxdhMORU=
 			</data>
 			<key>hash2</key>
 			<data>
-			84kWopDztPHuwd5iBls7zMIfcG1ZFkijznkZU63hAJE=
+			nL+OGlhccZz9bAxDYVMYY657F95x4c9lCk4DJ8kTrtM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MicroblinkPlatform.framework/Modules/MicroblinkPlatform.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -340,11 +340,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kmsX4jsuhuznQRKFjQ9nCB8SVSg=
+			WAwwWo2ngq4z4sHhQrSVxdhMORU=
 			</data>
 			<key>hash2</key>
 			<data>
-			84kWopDztPHuwd5iBls7zMIfcG1ZFkijznkZU63hAJE=
+			nL+OGlhccZz9bAxDYVMYY657F95x4c9lCk4DJ8kTrtM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MicroblinkPlatform.framework/Modules/MicroblinkPlatform.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -406,11 +406,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			F4It//rX5vFA9bCx0pn/9io0bg4=
+			N4gFrE/EUfdl5geVjWiMpblpOFY=
 			</data>
 			<key>hash2</key>
 			<data>
-			+rM6hX1DWj9Qm/wWggCyGNXXuGrQ5aRdb2Vh2ShqIi8=
+			daaig3gg3CHzM3QScIfUhOGSTh6p4i+A6tjrUOYgS58=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MicroblinkPlatform.framework/en.lproj/Localizable.strings</key>
