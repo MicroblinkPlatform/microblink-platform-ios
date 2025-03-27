@@ -463,7 +463,8 @@
             "mangledName": "$s18MicroblinkPlatform0aB7ConsentV6userId26isProcessingStoringAllowed0f8TrainingI04noteACSS_S2bSSSgtcfc",
             "moduleName": "MicroblinkPlatform",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "init_kind": "Designated"
           }
@@ -473,7 +474,8 @@
         "mangledName": "$s18MicroblinkPlatform0aB7ConsentV",
         "moduleName": "MicroblinkPlatform",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -525,7 +527,8 @@
             "moduleName": "MicroblinkPlatform",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -569,7 +572,8 @@
             "moduleName": "MicroblinkPlatform",
             "declAttributes": [
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -601,7 +605,8 @@
         "mangledName": "$s18MicroblinkPlatform0aB6ResultV",
         "moduleName": "MicroblinkPlatform",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -848,7 +853,8 @@
         "mangledName": "$s18MicroblinkPlatform0aB12ResultStatusO",
         "moduleName": "MicroblinkPlatform",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -920,6 +926,9 @@
             "genericSig": "<τ_0_0 where τ_0_0 : MicroblinkPlatform.MicroblinkPlatformSDKDelegate>",
             "sugared_genericSig": "<Self where Self : MicroblinkPlatform.MicroblinkPlatformSDKDelegate>",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -953,6 +962,9 @@
             "genericSig": "<τ_0_0 where τ_0_0 : MicroblinkPlatform.MicroblinkPlatformSDKDelegate>",
             "sugared_genericSig": "<Self where Self : MicroblinkPlatform.MicroblinkPlatformSDKDelegate>",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
@@ -964,7 +976,8 @@
         "genericSig": "<τ_0_0 : AnyObject>",
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -1025,7 +1038,8 @@
             "mangledName": "$s18MicroblinkPlatform0aB3SDKC15serviceSettings8delegateAcA0ab7ServiceE0C_AA0aB11SDKDelegate_pSgtcfc",
             "moduleName": "MicroblinkPlatform",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "init_kind": "Designated"
           },
@@ -1047,7 +1061,8 @@
             "moduleName": "MicroblinkPlatform",
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -1058,7 +1073,8 @@
         "moduleName": "MicroblinkPlatform",
         "declAttributes": [
           "Final",
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -1156,7 +1172,8 @@
             "mangledName": "$s18MicroblinkPlatform0aB15ServiceSettingsC10workflowId16authProviderHost7consent24additionalRequestHeadersACSS_SSAA0aB7ConsentVSDyS2SGSgtcfc",
             "moduleName": "MicroblinkPlatform",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "init_kind": "Designated"
           }
@@ -1167,7 +1184,8 @@
         "moduleName": "MicroblinkPlatform",
         "declAttributes": [
           "Final",
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -5005,7 +5023,8 @@
         "moduleName": "MicroblinkPlatform",
         "declAttributes": [
           "Final",
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [
