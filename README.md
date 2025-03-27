@@ -9,7 +9,7 @@
 
 Microblink Platform iOS SDK enables seamless and secure user authentication by integrating advanced identity verification features, such as document scanning, facial recognition, and real-time validation, into your application. It helps businesses ensure compliance, prevent fraud, and enhance user trust with minimal development effort.
 
-## Table Of Contents
+## Table of Contents
 
   - [Requirements](#requirements)
   - [MicroblinkPlatform Server compatibility](#microblinkplatform-server-compatibility)
@@ -18,6 +18,7 @@ Microblink Platform iOS SDK enables seamless and secure user authentication by i
     - [Clone](#clone)
     - [UIKit](#uikit)
     - [SwiftUI](#swiftui)
+  - [Sample apps](#sample-apps)
   - [Changing default strings](#changing-default-strings)
   - [Customizing the look](#customizing-the-look)
 
