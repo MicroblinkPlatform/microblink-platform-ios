@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		43EA98122D958F5600A54E45 /* BlinkIDVerifyWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 43EA98112D958F5600A54E45 /* BlinkIDVerifyWrapper */; };
+		43EA98142D958F5600A54E45 /* IDLiveFaceCamera in Frameworks */ = {isa = PBXBuildFile; productRef = 43EA98132D958F5600A54E45 /* IDLiveFaceCamera */; };
+		43EA98162D958F5600A54E45 /* IDLiveFaceIAD in Frameworks */ = {isa = PBXBuildFile; productRef = 43EA98152D958F5600A54E45 /* IDLiveFaceIAD */; };
+		43EA98182D958F5600A54E45 /* MicroblinkPlatform in Frameworks */ = {isa = PBXBuildFile; productRef = 43EA98172D958F5600A54E45 /* MicroblinkPlatform */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		43EA96202D95849000A54E45 /* MicroblinkPlatformSampleSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MicroblinkPlatformSampleSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +30,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43EA98162D958F5600A54E45 /* IDLiveFaceIAD in Frameworks */,
+				43EA98182D958F5600A54E45 /* MicroblinkPlatform in Frameworks */,
+				43EA98122D958F5600A54E45 /* BlinkIDVerifyWrapper in Frameworks */,
+				43EA98142D958F5600A54E45 /* IDLiveFaceCamera in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +76,10 @@
 			);
 			name = MicroblinkPlatformSampleSwiftUI;
 			packageProductDependencies = (
+				43EA98112D958F5600A54E45 /* BlinkIDVerifyWrapper */,
+				43EA98132D958F5600A54E45 /* IDLiveFaceCamera */,
+				43EA98152D958F5600A54E45 /* IDLiveFaceIAD */,
+				43EA98172D958F5600A54E45 /* MicroblinkPlatform */,
 			);
 			productName = MicroblinkPlatformSampleSwiftUI;
 			productReference = 43EA96202D95849000A54E45 /* MicroblinkPlatformSampleSwiftUI.app */;
@@ -94,6 +109,9 @@
 			);
 			mainGroup = 43EA96172D95849000A54E45;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				43EA98102D958F5600A54E45 /* XCRemoteSwiftPackageReference "microblink-platform-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 43EA96212D95849000A54E45 /* Products */;
 			projectDirPath = "";
@@ -334,6 +352,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		43EA98102D958F5600A54E45 /* XCRemoteSwiftPackageReference "microblink-platform-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MicroblinkPlatform/microblink-platform-ios";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		43EA98112D958F5600A54E45 /* BlinkIDVerifyWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43EA98102D958F5600A54E45 /* XCRemoteSwiftPackageReference "microblink-platform-ios" */;
+			productName = BlinkIDVerifyWrapper;
+		};
+		43EA98132D958F5600A54E45 /* IDLiveFaceCamera */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43EA98102D958F5600A54E45 /* XCRemoteSwiftPackageReference "microblink-platform-ios" */;
+			productName = IDLiveFaceCamera;
+		};
+		43EA98152D958F5600A54E45 /* IDLiveFaceIAD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43EA98102D958F5600A54E45 /* XCRemoteSwiftPackageReference "microblink-platform-ios" */;
+			productName = IDLiveFaceIAD;
+		};
+		43EA98172D958F5600A54E45 /* MicroblinkPlatform */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43EA98102D958F5600A54E45 /* XCRemoteSwiftPackageReference "microblink-platform-ios" */;
+			productName = MicroblinkPlatform;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 43EA96182D95849000A54E45 /* Project object */;
 }
