@@ -2,14 +2,25 @@
   <img src="https://raw.githubusercontent.com/wiki/blinkid/blinkid-ios/Images/logo-microblink.png" alt="Microblink Logo" title="Microblink Logo">
 </p>
 
-[![SwiftPM compatible](https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg)](https://swift.org/package-manager/)
+[![Platform iOS](https://img.shields.io/badge/Platform-iOS-blue)](https://img.shields.io/badge/Platform-iOS-blue)
+[![Swift Package Manager Compatible](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange)](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange)
 
 # MicroblinkPlatform SDK for iOS
 
-> [!CAUTION]
-> Add description.
+Microblink Platform iOS SDK enables seamless and secure user authentication by integrating advanced identity verification features, such as document scanning, facial recognition, and real-time validation, into your application. It helps businesses ensure compliance, prevent fraud, and enhance user trust with minimal development effort.
 
-## Table Of Contents
+## Table of Contents
+
+  - [Requirements](#requirements)
+  - [MicroblinkPlatform Server compatibility](#microblinkplatform-server-compatibility)
+  - [SDK integration](#sdk-integration)
+    - [Swift Package Manager](#swift-package-manager)
+    - [Clone](#clone)
+    - [UIKit](#uikit)
+    - [SwiftUI](#swiftui)
+  - [Sample apps](#sample-apps)
+  - [Changing default strings](#changing-default-strings)
+  - [Customizing the look](#customizing-the-look)
 
 ## Requirements
 
@@ -17,13 +28,12 @@ MicroblinkPlatform SDK requires iOS 16.0+.
 
 ## MicroblinkPlatform Server compatibility
 
+In order to use the SDK, you need to define a proxy service which will be used to communicate with the Microblink Platform. This service should be used to forward requests from the SDK to the Microblink Platform and back in order to start the transaction. The service should be implemented on your side and SDK will use it to communicate with the platform.
+
 > [!IMPORTANT]
-> To use our API, you will need an `workflowId` and `authProviderHost`. Please reach out to us to obtain these credentials.
+> To use our API, you will need an `workflowId` and `authProviderHost`. [Please reach out to us to obtain these credentials](https://microblink.com/contact-us/).
 
 Make sure that you use a compatible Workflow version for the MicroblinkPlatform iOS library version that you use.
-
-> [!CAUTION]
-> Add more info.
 
 ## SDK integration
 
@@ -31,18 +41,12 @@ Make sure that you use a compatible Workflow version for the MicroblinkPlatform 
 
 - File > Swift Packages > Add Package Dependency
 - Add https://github.com/MicroblinkPlatform/microblink-platform-ios.git
+- Select **Exact Version** - 1.0.0
+- Add all dependencies to your target!
 
 ### Clone
 
 If you prefer not to use Swift Package Manager, you can integrate MicroblinkPlatform into your project manually.
-
-Since the libraries are stored on [Git Large File Storage](https://git-lfs.github.com), you need to install git-lfs by running these commands:
-```shell
-brew install git-lfs
-git lfs install
-```
-
-**Be sure to restart your console after installing Git LFS**
 
 Manually import xcframeworks from `Frameworks` folder.
 
@@ -52,12 +56,19 @@ Additionally, clone [BlinkIDVerify repository](https://github.com/BlinkID/blinki
 
 ```swift
 import MicroblinkPlatform
-```
+import UIKit
 
-```swift
+let consent = MicroblinkPlatformConsent(
+    userId: user_id,
+    isProcessingStoringAllowed: true,
+    isTrainingAllowed: true,
+    note: nil
+)
+        
 let serviceSettings = MicroblinkPlatformServiceSettings(
     workflowId: your-workflow-id,
     authProviderHost: your_host_url,
+    consent: consent,
     additionalRequestHeaders: nil
 )
         
@@ -73,10 +84,11 @@ present(viewController, animated: true)
 
 Verification results are returned via `MicroblinkPlatformSDKDelegate`.
 
-`MicroblinkPlatformResult` can be: accept, review, reject
-
 ```swift
 func microblinkPlatformSDKDidFinish(viewController: UIViewController, result: MicroblinkPlatformResult) {
+    // `MicroblinkPlatformResult` has:
+    // - status enum that returns: accept, review, reject
+    // - transactionId string
     viewController.dismiss(animated: true)
 }
     
@@ -88,10 +100,8 @@ func microblinkPlatformSDKDidClose(viewController: UIViewController) {
 ### SwiftUI
 
 ```swift
-import MicroblinkPlatform
-```
+import SwiftUI
 
-```swift
 struct ContentView: View {
     @State private var showSDK = false
 
@@ -100,7 +110,7 @@ struct ContentView: View {
             showSDK = true
         }
         .fullScreenCover(isPresented: $showSDK) {
-            MicroblinkPlatformWrapperView(workflowId: your-workflow-id, authProviderHost: your_host_url, additionalRequestHeaders: nil ) { result in
+            MicroblinkPlatformWrapperView(workflowId: your-workflow-id, authProviderHost: your_host_url, additionalRequestHeaders: nil) { microblinkPlatfromResult in
                 showSDK = false
             } onClose: {
                 showSDK = false
@@ -110,7 +120,12 @@ struct ContentView: View {
 }
 ```
 
+Example of `MicroblinkPlatformWrapperView`.
+
 ```swift
+import MicroblinkPlatform
+import SwiftUI
+
 struct MicroblinkPlatformWrapperView: UIViewControllerRepresentable {
     let workflowId: String
     let authProviderHost: String
@@ -128,9 +143,17 @@ struct MicroblinkPlatformWrapperView: UIViewControllerRepresentable {
     }
     
     func makeUIViewController(context: Context) -> UIViewController {
+        let consent = MicroblinkPlatformConsent(
+            userId: user_id,
+            isProcessingStoringAllowed: true,
+            isTrainingAllowed: true,
+            note: nil
+        )
+        
         let serviceSettings = MicroblinkPlatformServiceSettings(
             workflowId: workflowId,
             authProviderHost: authProviderHost,
+            consent: consent,
             additionalRequestHeaders: additionalRequestHeaders
         )
 
@@ -149,6 +172,7 @@ struct MicroblinkPlatformWrapperView: UIViewControllerRepresentable {
         Coordinator(onCompletion: onCompletion, onClose: onClose)
     }
 
+    // Verification results are returned via `MicroblinkPlatformSDKDelegate`.
     class Coordinator: NSObject, MicroblinkPlatformSDKDelegate {
         var onCompletion: (MicroblinkPlatformResult) -> Void
         var onClose: () -> Void
@@ -159,6 +183,9 @@ struct MicroblinkPlatformWrapperView: UIViewControllerRepresentable {
         }
 
         func microblinkPlatformSDKDidFinish(viewController: UIViewController, result: MicroblinkPlatformResult) {
+            // `MicroblinkPlatformResult` has:
+            // - status enum that returns: accept, review, reject
+            // - transactionId string
             viewController.dismiss(animated: true) {
                 self.onCompletion(result)
             }
@@ -172,6 +199,10 @@ struct MicroblinkPlatformWrapperView: UIViewControllerRepresentable {
     }
 }
 ```
+
+## Sample apps
+
+Check our sample apps in `Samples` folder.
 
 ## Changing default strings
 

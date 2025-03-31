@@ -1,0 +1,92 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MicroblinkPlatform
+import AVFoundation
+import Combine
+import DeveloperToolsSupport
+import Foundation
+@_exported import MicroblinkPlatform
+import Swift
+import SwiftUI
+import SystemConfiguration
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+
+
+
+
+public struct MicroblinkPlatformConsent {
+  public init(userId: Swift.String, isProcessingStoringAllowed: Swift.Bool, isTrainingAllowed: Swift.Bool, note: Swift.String?)
+}
+public struct MicroblinkPlatformResult {
+  public let status: MicroblinkPlatform.MicroblinkPlatformResultStatus
+  public let transactionId: Swift.String
+}
+public enum MicroblinkPlatformResultStatus {
+  case accept, review, reject
+  public static func == (a: MicroblinkPlatform.MicroblinkPlatformResultStatus, b: MicroblinkPlatform.MicroblinkPlatformResultStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol MicroblinkPlatformSDKDelegate : AnyObject {
+  func microblinkPlatformSDKDidClose(viewController: UIKit.UIViewController)
+  func microblinkPlatformSDKDidFinish(viewController: UIKit.UIViewController, result: MicroblinkPlatform.MicroblinkPlatformResult)
+}
+final public class MicroblinkPlatformSDK {
+  public init(serviceSettings: MicroblinkPlatform.MicroblinkPlatformServiceSettings, delegate: (any MicroblinkPlatform.MicroblinkPlatformSDKDelegate)?)
+  final public func startSDK() -> UIKit.UIViewController
+  @objc deinit
+}
+final public class MicroblinkPlatformServiceSettings {
+  public init(workflowId: Swift.String, authProviderHost: Swift.String, consent: MicroblinkPlatform.MicroblinkPlatformConsent, additionalRequestHeaders: [Swift.String : Swift.String]? = nil)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class MicroblinkPlatformTheme {
+  public static let shared: MicroblinkPlatform.MicroblinkPlatformTheme
+  final public var primaryColor: UIKit.UIColor
+  final public var mainScreenMainImage: UIKit.UIImage
+  final public var verifySuccessImage: UIKit.UIImage
+  final public var verifyReviewImage: UIKit.UIImage
+  final public var verifyErrorImage: UIKit.UIImage
+  final public var cameraPermissionIcon: UIKit.UIImage
+  final public var loadingFont: UIKit.UIFont
+  final public var mainScreenTitleFont: UIKit.UIFont
+  final public var mainScreenSubtitleFont: UIKit.UIFont
+  final public var mainScreenTitleColor: UIKit.UIColor
+  final public var mainScreenSubtitleColor: UIKit.UIColor
+  final public var mainScreenAdditionalStepsFont: UIKit.UIFont
+  final public var errorFont: UIKit.UIFont
+  final public var errorSubtitleFont: UIKit.UIFont
+  final public var cameraPermissionFont: UIKit.UIFont
+  final public var cameraPermissionSubtitleFont: UIKit.UIFont
+  final public var mainButtonFont: UIKit.UIFont
+  final public var verifyTitleFont: UIKit.UIFont
+  final public var verifySubtitleFont: UIKit.UIFont
+  final public var buttonCornerRadius: Swift.Double
+  final public var localizationBundle: Foundation.Bundle?
+  final public var documentScanAlertTitleColor: SwiftUICore.Color
+  final public var documentScanAlertTitleFont: SwiftUICore.Font
+  final public var documentScanAlertDescriptionColor: SwiftUICore.Color
+  final public var documentScanAlertDescriptionFont: SwiftUICore.Font
+  final public var documentScanAlertButtonColor: SwiftUICore.Color
+  final public var documentScanAlertButtonFont: SwiftUICore.Font
+  final public var documentScanAlertBackgroundColor: SwiftUICore.Color
+  final public var documentScanOnboardingSheetTitleColor: SwiftUICore.Color
+  final public var documentScanOnboardingSheetTitleFont: SwiftUICore.Font
+  final public var documentScanOnboardingSheetDescriptionColor: SwiftUICore.Color
+  final public var documentScanOnboardingSheetDescriptionFont: SwiftUICore.Font
+  final public var documentScanOnboardingSheetButtonColor: SwiftUICore.Color
+  final public var documentScanOnboardingSheetButtonFont: SwiftUICore.Font
+  final public var documentScanOnboardingSheetPageIndicatorColor: SwiftUICore.Color
+  final public var documentScanOnboardingSheetBackgroundColor: SwiftUICore.Color
+  final public var documentScanReticleTooltipFont: SwiftUICore.Font
+  final public var documentScanHelpButtonForegroundColor: SwiftUICore.Color
+  final public var documentScanHelpButtonBackgroundColor: SwiftUICore.Color
+  @objc deinit
+}
+extension MicroblinkPlatform.MicroblinkPlatformResultStatus : Swift.Equatable {}
+extension MicroblinkPlatform.MicroblinkPlatformResultStatus : Swift.Hashable {}

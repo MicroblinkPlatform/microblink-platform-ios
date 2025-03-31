@@ -1,0 +1,6 @@
+framework module MicroblinkPlatform {
+  umbrella header "MicroblinkPlatform.h"
+  export *
+
+  module * { export * }
+}
