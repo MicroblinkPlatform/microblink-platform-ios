@@ -111,6 +111,47 @@
       },
       {
         "kind": "Import",
+        "name": "BlinkIDVerify",
+        "printedName": "BlinkIDVerify",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "BlinkIDVerify",
+        "printedName": "BlinkIDVerify",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -5070,6 +5111,30 @@
       },
       {
         "kind": "Import",
+        "name": "BlinkIDVerifyUX",
+        "printedName": "BlinkIDVerifyUX",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
         "declKind": "Import",
@@ -5198,7 +5263,7 @@
       "kind": "StringLiteral",
       "offset": 206,
       "length": 7,
-      "value": "\"1.0.0\""
+      "value": "\"1.1.0\""
     },
     {
       "filePath": "\/Users\/tcvetkovic\/Developer\/Microblink\/IDV\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseAPI\/APIConstants.swift",
@@ -5411,6 +5476,13 @@
       "value": "\"licenseKey\""
     },
     {
+      "filePath": "\/Users\/tcvetkovic\/Developer\/Microblink\/IDV\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/StepsContainer\/BlinkIDUXViewWrappedHostingController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 544,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/tcvetkovic\/Developer\/Microblink\/IDV\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/StepsContainer\/ScanningUXWrappedHostingController.swift",
       "kind": "BooleanLiteral",
       "offset": 551,
@@ -5420,7 +5492,7 @@
     {
       "filePath": "\/Users\/tcvetkovic\/Developer\/Microblink\/IDV\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/StepsContainer\/StepsContainerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 8725,
+      "offset": 14452,
       "length": 5,
       "value": "false"
     },

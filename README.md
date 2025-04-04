@@ -41,7 +41,7 @@ Make sure that you use a compatible Workflow version for the MicroblinkPlatform 
 
 - File > Swift Packages > Add Package Dependency
 - Add https://github.com/MicroblinkPlatform/microblink-platform-ios.git
-- Select **Exact Version** - 1.0.0
+- Select **Exact Version** - 1.1.0
 - Add all dependencies to your target!
 
 ### Clone
