@@ -25,3 +25,4 @@ timeline.xctimeline
 xcuserdata/
 *.swiftpm
 Package.resolved
+Frameworks/*.zip

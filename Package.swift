@@ -32,17 +32,17 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "MicroblinkPlatform",
-            url: "https://github.com/MicroblinkPlatform/microblink-platform-ios/releases/download/v1.1.0/MicroblinkPlatform.xcframework.zip",
-            checksum: "7715404ee21c1c2b1bdfcdb55414ef6254d5054abc541217a5ec42c13d9bcfb8"),
+            url: "https://github.com/MicroblinkPlatform/microblink-platform-ios/releases/download/v1.1.1/MicroblinkPlatform.xcframework.zip",
+            checksum: "cf5212fd8e3ea5724338560e5866bccd7ea207adcfef2d8c9973a8dc403a87dd"),
         .binaryTarget(
             name: "BlinkIDVerifyUX",
-            url:"https://github.com/BlinkID/blinkid-verify-ios/releases/download/v3.9.0/BlinkIDVerifyUX.xcframework.zip",
-            checksum:"a97fdc2c269372ccb8a326dba7f02703ff446b02832e2e177ab862f463f9ae47"
+            url:"https://github.com/BlinkID/blinkid-verify-ios/releases/download/v3.9.1/BlinkIDVerifyUX.xcframework.zip",
+            checksum:"4e0e207ceb53601613e96de0323ff7991e5e0fae7e073e0d4eaf003c83e002d6"
         ),
         .binaryTarget(
             name: "BlinkIDVerify",
-            url:"https://github.com/BlinkID/blinkid-verify-ios/releases/download/v3.9.0/BlinkIDVerify.xcframework.zip",
-            checksum:"5024b6ac6a6b116ed51ba636f7f07402cdd8d89e65db7a870a1ee9054e91a854"
+            url:"https://github.com/BlinkID/blinkid-verify-ios/releases/download/v3.9.1/BlinkIDVerify.xcframework.zip",
+            checksum:"5f234c7927e0b2f538e1f266254de3b787a22b75ac4203aac6a250218e6d698e"
         ),
         .binaryTarget(
             name: "IDLiveFaceCamera",
