@@ -4,6 +4,9 @@
     "" : {
 
     },
+    "%@" : {
+
+    },
     "mb-mp-button-try-again" : {
       "localizations" : {
         "en" : {
@@ -40,6 +43,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Camera permission required"
+          }
+        }
+      }
+    },
+    "mb-mp-cancel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
           }
         }
       }
@@ -204,6 +218,245 @@
         }
       }
     },
+    "mb-mp-form-attach-file" : {
+      "comment" : "Manual input scan",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Attach File"
+          }
+        }
+      }
+    },
+    "mb-mp-form-choose-photo" : {
+      "comment" : "Manual input scan",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose Photo"
+          }
+        }
+      }
+    },
+    "mb-mp-form-decimal-validation" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please enter a valid decimal number"
+          }
+        }
+      }
+    },
+    "mb-mp-form-dob-too-old-validation" : {
+      "comment" : "Manual input scan",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please enter a reasonable date of birth"
+          }
+        }
+      }
+    },
+    "mb-mp-form-dob-validation" : {
+      "comment" : "Manual input scan",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Date must be in the past"
+          }
+        }
+      }
+    },
+    "mb-mp-form-email-validation" : {
+      "comment" : "Manual input scan",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please enter a valid email address (e.g., name@company.com)"
+          }
+        }
+      }
+    },
+    "mb-mp-form-integer-validation" : {
+      "comment" : "Manual input scan",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please enter a valid number"
+          }
+        }
+      }
+    },
+    "mb-mp-form-more-details" : {
+      "comment" : "Manual input scan",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add more details"
+          }
+        }
+      }
+    },
+    "mb-mp-form-more-info" : {
+      "comment" : "Manual input scan",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tell us a bit more"
+          }
+        }
+      }
+    },
+    "mb-mp-form-phone-number-validation" : {
+      "comment" : "Manual input scan",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter a valid phone number"
+          }
+        }
+      }
+    },
+    "mb-mp-form-remove" : {
+      "comment" : "Manual input scan",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remove"
+          }
+        }
+      }
+    },
+    "mb-mp-form-remove-uploaded-file" : {
+      "comment" : "Manual input scan",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remove uploaded file?"
+          }
+        }
+      }
+    },
+    "mb-mp-form-required-field" : {
+      "comment" : "Manual input scan",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This is required field"
+          }
+        }
+      }
+    },
+    "mb-mp-form-set-date" : {
+      "comment" : "Manual input scan",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Set date"
+          }
+        }
+      }
+    },
+    "mb-mp-form-set-date-time" : {
+      "comment" : "Manual input scan",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Set date and time"
+          }
+        }
+      }
+    },
+    "mb-mp-form-set-time" : {
+      "comment" : "Manual input scan",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Set time"
+          }
+        }
+      }
+    },
+    "mb-mp-form-ssn-validation" : {
+      "comment" : "Manual input scan",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter a valid 9-digit social security number (e.g., 123-45-6789 or 123456789) "
+          }
+        }
+      }
+    },
+    "mb-mp-form-submit" : {
+      "comment" : "Manual input scan",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Submit"
+          }
+        }
+      }
+    },
+    "mb-mp-form-take-photo" : {
+      "comment" : "Manual input scan",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Take Photo"
+          }
+        }
+      }
+    },
+    "mb-mp-form-upload" : {
+      "comment" : "Manual input scan",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upload"
+          }
+        }
+      }
+    },
     "mb-mp-loading-text" : {
       "localizations" : {
         "en" : {
@@ -250,6 +503,28 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Let’s verify your identity"
+          }
+        }
+      }
+    },
+    "mb-mp-more-details-subtitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tell us a bit more"
+          }
+        }
+      }
+    },
+    "mb-mp-more-details-title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add more details"
           }
         }
       }
