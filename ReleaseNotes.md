@@ -1,7 +1,7 @@
 # Release notes
 
 ## v1.2.0
-- Added support for manual input
+- Added support for User input
 
 ## v1.1.0
 - Added support for BlinkID
