@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MicroblinkPlatform
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MicroblinkPlatform
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
 import AVFoundation
 import Combine
 import DeveloperToolsSupport
@@ -17,13 +18,18 @@ import _SwiftConcurrencyShims
 
 
 
-
 public struct MicroblinkPlatformConsent {
   public init(userId: Swift.String, isProcessingStoringAllowed: Swift.Bool, isTrainingAllowed: Swift.Bool, note: Swift.String?)
 }
 public struct MicroblinkPlatformResult {
   public let status: MicroblinkPlatform.MicroblinkPlatformResultStatus
   public let transactionId: Swift.String
+}
+public struct MicroblinkPlatformResultCardScanResult {
+  public let cardNumber: Swift.String
+  public let expiryDate: Swift.String
+  public let owner: Swift.String
+  public let cvv: Swift.String
 }
 public enum MicroblinkPlatformResultStatus {
   case accept, review, reject
@@ -36,12 +42,14 @@ public enum MicroblinkPlatformResultStatus {
 public protocol MicroblinkPlatformSDKDelegate : AnyObject {
   func microblinkPlatformSDKDidClose(viewController: UIKit.UIViewController)
   func microblinkPlatformSDKDidFinish(viewController: UIKit.UIViewController, result: MicroblinkPlatform.MicroblinkPlatformResult)
+  func microblinkPlatformSDKDidFinishCardScanStep(viewController: UIKit.UIViewController, cardScanResult: MicroblinkPlatform.MicroblinkPlatformResultCardScanResult)
 }
 final public class MicroblinkPlatformSDK {
   public init(serviceSettings: MicroblinkPlatform.MicroblinkPlatformServiceSettings, delegate: (any MicroblinkPlatform.MicroblinkPlatformSDKDelegate)?)
   final public func startSDK() -> UIKit.UIViewController
   @objc deinit
 }
+
 final public class MicroblinkPlatformServiceSettings {
   public init(workflowId: Swift.String, authProviderHost: Swift.String, consent: MicroblinkPlatform.MicroblinkPlatformConsent, additionalRequestHeaders: [Swift.String : Swift.String]? = nil)
   @objc deinit
