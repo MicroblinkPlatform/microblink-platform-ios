@@ -93,6 +93,10 @@ struct MicroblinkPlatformWrapperView: UIViewControllerRepresentable {
                 self.onClose()
             }
         }
+        
+        func microblinkPlatformSDKDidFinishCardScanStep(viewController: UIViewController, cardScanResult: MicroblinkPlatformResultCardScanResult) {
+            print("Sample microblinkPlatformSDKDidFinish: \(cardScanResult)")
+        }
     }
 }
 

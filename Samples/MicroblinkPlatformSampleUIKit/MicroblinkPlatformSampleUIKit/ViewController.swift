@@ -47,4 +47,8 @@ extension ViewController: MicroblinkPlatformSDKDelegate {
         viewController.dismiss(animated: true)
         print("Sample microblinkPlatformSDKDidClose")
     }
+    
+    func microblinkPlatformSDKDidFinishCardScanStep(viewController: UIViewController, cardScanResult: MicroblinkPlatformResultCardScanResult) {
+        print("Sample microblinkPlatformSDKDidFinish: \(cardScanResult)")
+    }
 }
