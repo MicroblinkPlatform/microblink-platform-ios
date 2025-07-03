@@ -1,5 +1,8 @@
 # Transition Guide
 
+## v1.3.0
+- No changes
+
 ## v1.2.0
 - No changes
 
