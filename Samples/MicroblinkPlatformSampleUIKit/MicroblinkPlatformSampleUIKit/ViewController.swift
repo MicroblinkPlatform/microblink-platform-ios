@@ -20,7 +20,7 @@ class ViewController: UIViewController {
 #warning ("Please replace with your own workflowId and authProviderHost! authProviderHost URL also depends on the region: https://platform.docs.microblink.com/platform-api/overview/")
 #warning ("Please check documentation: https://github.com/MicroblinkPlatform/microblink-platform-ios/tree/main?tab=readme-ov-file#microblinkplatform-server-compatibility")
         let serviceSettings = MicroblinkPlatformServiceSettings(
-            workflowId: "66e2ea8d565cfb4fc3f04c6f",
+            workflowId: "686672a5f544c6f7456830b9",
             authProviderHost: "https://api.us-east.platform.microblink.com",
             consent: consent,
             additionalRequestHeaders: nil
