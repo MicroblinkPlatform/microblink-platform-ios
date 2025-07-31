@@ -158,6 +158,36 @@
         }
       }
     },
+    "mb-mp-face-capture-close-mouth" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Close your mouth"
+          }
+        }
+      }
+    },
+    "mb-mp-face-capture-eyes-open" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keep your eyes open"
+          }
+        }
+      }
+    },
+    "mb-mp-face-capture-face-fully-visible" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keep your face fully visible"
+          }
+        }
+      }
+    },
     "mb-mp-face-capture-keep-still" : {
       "localizations" : {
         "en" : {
@@ -214,6 +244,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Place your face into the frame"
+          }
+        }
+      }
+    },
+    "mb-mp-face-capture-remove-sunglasses" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remove your sunglasses"
+          }
+        }
+      }
+    },
+    "mb-mp-face-capture-straight-centered" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ensure your face is straight and centered"
           }
         }
       }
