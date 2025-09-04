@@ -9,8 +9,8 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 // Version settings
-MARKETING_VERSION = 1.4.0
-CURRENT_PROJECT_VERSION = 1.4.0
+MARKETING_VERSION = 1.4.1
+CURRENT_PROJECT_VERSION = 1.4.1
 
 // Strip settings
 STRIPFLAGS = "-rSTx"
