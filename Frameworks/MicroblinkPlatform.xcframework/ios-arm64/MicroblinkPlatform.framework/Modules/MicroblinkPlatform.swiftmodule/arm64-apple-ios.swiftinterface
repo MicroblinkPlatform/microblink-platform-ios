@@ -15,6 +15,20 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public protocol MicroblinkPlatformSDKDelegate : AnyObject {
+  func microblinkPlatformSDKDidClose(viewController: UIKit.UIViewController)
+  func microblinkPlatformSDKDidFinish(viewController: UIKit.UIViewController, result: MicroblinkPlatform.MicroblinkPlatformResult)
+  func microblinkPlatformSDKDidFinishCardScanStep(viewController: UIKit.UIViewController, cardScanResult: MicroblinkPlatform.MicroblinkPlatformResultCardScanResult)
+}
+final public class MicroblinkPlatformSDK {
+  public init(serviceSettings: MicroblinkPlatform.MicroblinkPlatformServiceSettings, delegate: (any MicroblinkPlatform.MicroblinkPlatformSDKDelegate)?)
+  final public func startSDK() -> UIKit.UIViewController
+  @objc deinit
+}
+final public class MicroblinkPlatformServiceSettings {
+  public init(workflowId: Swift.String, url: Swift.String, consent: MicroblinkPlatform.MicroblinkPlatformConsent, additionalRequestHeaders: [Swift.String : Swift.String]? = nil)
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers final public class MicroblinkPlatformTheme {
   public static let shared: MicroblinkPlatform.MicroblinkPlatformTheme
   final public var primaryColor: UIKit.UIColor
@@ -60,6 +74,7 @@ import _SwiftConcurrencyShims
 }
 
 
+
 public struct MicroblinkPlatformConsent {
   public init(userId: Swift.String, isProcessingStoringAllowed: Swift.Bool, isTrainingAllowed: Swift.Bool, note: Swift.String?)
 }
@@ -73,6 +88,7 @@ public struct MicroblinkPlatformResultCardScanResult {
   public let owner: Swift.String
   public let cvv: Swift.String
 }
+
 public enum MicroblinkPlatformResultStatus {
   case accept, review, reject
   public static func == (a: MicroblinkPlatform.MicroblinkPlatformResultStatus, b: MicroblinkPlatform.MicroblinkPlatformResultStatus) -> Swift.Bool
@@ -81,21 +97,5 @@ public enum MicroblinkPlatformResultStatus {
     get
   }
 }
-
-public protocol MicroblinkPlatformSDKDelegate : AnyObject {
-  func microblinkPlatformSDKDidClose(viewController: UIKit.UIViewController)
-  func microblinkPlatformSDKDidFinish(viewController: UIKit.UIViewController, result: MicroblinkPlatform.MicroblinkPlatformResult)
-  func microblinkPlatformSDKDidFinishCardScanStep(viewController: UIKit.UIViewController, cardScanResult: MicroblinkPlatform.MicroblinkPlatformResultCardScanResult)
-}
-final public class MicroblinkPlatformSDK {
-  public init(serviceSettings: MicroblinkPlatform.MicroblinkPlatformServiceSettings, delegate: (any MicroblinkPlatform.MicroblinkPlatformSDKDelegate)?)
-  final public func startSDK() -> UIKit.UIViewController
-  @objc deinit
-}
-final public class MicroblinkPlatformServiceSettings {
-  public init(workflowId: Swift.String, authProviderHost: Swift.String, consent: MicroblinkPlatform.MicroblinkPlatformConsent, additionalRequestHeaders: [Swift.String : Swift.String]? = nil)
-  @objc deinit
-}
-
 extension MicroblinkPlatform.MicroblinkPlatformResultStatus : Swift.Equatable {}
 extension MicroblinkPlatform.MicroblinkPlatformResultStatus : Swift.Hashable {}

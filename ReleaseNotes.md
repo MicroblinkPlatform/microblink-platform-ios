@@ -1,5 +1,12 @@
 # Release notes
 
+## v1.4.2
+### Breaking changes
+- `MicroblinkPlatformServiceSettings` parameter update
+    - The field `authProviderHost` has been renamed to `url`.
+    - Previously, `authProviderHost` accepted only the base domain (e.g. `https://www.myapi.com`).
+    - Now, url must include the full API transaction endpoint, for example: `https://www.myapi.com/api/v1/transaction`
+
 ## v1.4.1
 ### Improvements
 - Improved extraction of first and middle names for certain ID types

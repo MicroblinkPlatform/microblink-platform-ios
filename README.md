@@ -31,7 +31,7 @@ MicroblinkPlatform SDK requires iOS 16.0+.
 In order to use the SDK, you need to define a proxy service which will be used to communicate with the Microblink Platform. This service should be used to forward requests from the SDK to the Microblink Platform and back in order to start the transaction. The service should be implemented on your side and SDK will use it to communicate with the platform.
 
 > [!IMPORTANT]
-> To use our API, you will need an `workflowId` and `authProviderHost`. [Please reach out to us to obtain these credentials](https://microblink.com/contact-us/).
+> To use our API, you will need an `workflowId` and `url`. [Please reach out to us to obtain these credentials](https://microblink.com/contact-us/).
 
 Make sure that you use a compatible Workflow version for the MicroblinkPlatform iOS library version that you use.
 
@@ -41,7 +41,7 @@ Make sure that you use a compatible Workflow version for the MicroblinkPlatform 
 
 - File > Swift Packages > Add Package Dependency
 - Add https://github.com/MicroblinkPlatform/microblink-platform-ios.git
-- Select **Exact Version** - 1.4.1
+- Select **Exact Version** - 1.4.2
 
 ### Clone
 
@@ -49,7 +49,8 @@ If you prefer not to use Swift Package Manager, you can integrate MicroblinkPlat
 
 Manually import xcframeworks from `Frameworks` folder.
 
-Additionally, clone [BlinkIDVerify repository](https://github.com/BlinkID/blinkid-verify-ios) to use `BlinkIDVerifyUX` and `BlinkIDVerify` xcframeworks.  
+Additionally, clone [BlinkIDVerify repository](https://github.com/BlinkID/blinkid-verify-ios) to use `BlinkIDVerifyUX` and `BlinkIDVerify` xcframeworks.
+And clone [BlinkCard repository](https://github.com/blinkcard/blinkcard-ios) to use `BlinkCard` xcframework.  
 
 ### UIKit
 
@@ -93,6 +94,10 @@ func microblinkPlatformSDKDidFinish(viewController: UIViewController, result: Mi
     
 func microblinkPlatformSDKDidClose(viewController: UIViewController) {
     viewController.dismiss(animated: true)
+}
+
+func microblinkPlatformSDKDidFinishCardScanStep(viewController: UIViewController, cardScanResult: MicroblinkPlatformResultCardScanResult) {
+    // `MicroblinkPlatformResultCardScanResult` returns: cardNumber, expiryDate, owner, cvv
 }
 ```
 
@@ -194,6 +199,10 @@ struct MicroblinkPlatformWrapperView: UIViewControllerRepresentable {
             viewController.dismiss(animated: true) {
                 self.onClose()
             }
+        }
+        
+        func microblinkPlatformSDKDidFinishCardScanStep(viewController: UIViewController, cardScanResult: MicroblinkPlatformResultCardScanResult) {
+            // `MicroblinkPlatformResultCardScanResult` returns: cardNumber, expiryDate, owner, cvv
         }
     }
 }
