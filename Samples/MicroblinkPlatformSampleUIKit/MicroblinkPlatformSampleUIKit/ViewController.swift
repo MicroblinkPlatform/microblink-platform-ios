@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 #warning ("Please check documentation: https://github.com/MicroblinkPlatform/microblink-platform-ios/tree/main?tab=readme-ov-file#microblinkplatform-server-compatibility")
         let serviceSettings = MicroblinkPlatformServiceSettings(
             workflowId: "686672a5f544c6f7456830b9",
-            authProviderHost: "https://api.us-east.platform.microblink.com",
+            url: "https://api.us-east.platform.microblink.com/proxy/api/v1/transaction",
             consent: consent,
             additionalRequestHeaders: nil
         )
