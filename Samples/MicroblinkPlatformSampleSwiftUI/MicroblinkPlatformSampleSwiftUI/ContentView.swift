@@ -26,15 +26,15 @@ struct ContentView: View {
 
 struct MicroblinkPlatformWrapperView: UIViewControllerRepresentable {
     let workflowId: String
-    let authProviderHost: String
+    let url: String
     let additionalRequestHeaders: [String: String]?
 
     var onCompletion: (MicroblinkPlatformResult) -> Void
     var onClose: () -> Void
 
-    init(workflowId: String, authProviderHost: String, additionalRequestHeaders: [String : String]? = nil, onCompletion: @escaping (MicroblinkPlatformResult) -> Void, onClose: @escaping () -> Void) {
+    init(workflowId: String, url: String, additionalRequestHeaders: [String : String]? = nil, onCompletion: @escaping (MicroblinkPlatformResult) -> Void, onClose: @escaping () -> Void) {
         self.workflowId = workflowId
-        self.authProviderHost = authProviderHost
+        self.url = url
         self.additionalRequestHeaders = additionalRequestHeaders
         self.onCompletion = onCompletion
         self.onClose = onClose
@@ -51,7 +51,7 @@ struct MicroblinkPlatformWrapperView: UIViewControllerRepresentable {
         
         let serviceSettings = MicroblinkPlatformServiceSettings(
             workflowId: workflowId,
-            authProviderHost: authProviderHost,
+            url: url,
             consent: consent,
             additionalRequestHeaders: additionalRequestHeaders
         )
