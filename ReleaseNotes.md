@@ -1,5 +1,17 @@
 # Release notes
 
+## v1.5.0
+### What's new
+- We've added kiosk mode support. This is helpful in applications where a tablet device is mounted on a wall, and your users are expected to scan their documents using the front camera only. 
+- You can now upload PDF files when using the manual input capability.
+
+### Updates
+We've updated our BlinkID Verify and BlinkCard dependencies:
+- The "Scan & Verify ID" capability now uses BlinkID Verify 3.14.1.
+- The "Scan Payment Card" capability now uses BlinkCard 2.12.0.
+
+To read more about the new features supported by these upgrades, see the release notes for [BlinkID Verify](https://blinkidverify.docs.microblink.com/docs/docver/release-notes/release-notes) and [BlinkCard](https://blinkcard.docs.microblink.com/category/release-notes/).
+
 ## v1.4.2
 ### Breaking changes
 - `MicroblinkPlatformServiceSettings` parameter update

@@ -268,6 +268,17 @@
         }
       }
     },
+    "mb-mp-form-alert-ok" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        }
+      }
+    },
     "mb-mp-form-attach-file" : {
       "comment" : "Manual input scan",
       "extractionState" : "manual",
@@ -371,6 +382,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tell us a bit more"
+          }
+        }
+      }
+    },
+    "mb-mp-form-pdf-size-too-big-file" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The file is too large. Please upload a PDF smaller than 20 MB."
           }
         }
       }
@@ -585,6 +607,26 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Add more details"
+          }
+        }
+      }
+    },
+    "mb-mp-portrait-mode-description" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please rotate your device to portrait mode."
+          }
+        }
+      }
+    },
+    "mb-mp-portrait-mode-title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Portrait mode only"
           }
         }
       }
