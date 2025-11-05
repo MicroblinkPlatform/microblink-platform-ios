@@ -6,57 +6,8 @@
     "children": [
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "MicroblinkPlatform",
         "declAttributes": [
@@ -64,248 +15,9 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "MicroblinkPlatformSDKDelegate",
-        "printedName": "MicroblinkPlatformSDKDelegate",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "microblinkPlatformSDKDidClose",
-            "printedName": "microblinkPlatformSDKDidClose(viewController:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18MicroblinkPlatform0aB11SDKDelegateP010microblinkB11SDKDidClose14viewControllerySo06UIViewH0C_tF",
-            "mangledName": "$s18MicroblinkPlatform0aB11SDKDelegateP010microblinkB11SDKDidClose14viewControllerySo06UIViewH0C_tF",
-            "moduleName": "MicroblinkPlatform",
-            "genericSig": "<τ_0_0 where τ_0_0 : MicroblinkPlatform.MicroblinkPlatformSDKDelegate>",
-            "sugared_genericSig": "<Self where Self : MicroblinkPlatform.MicroblinkPlatformSDKDelegate>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "microblinkPlatformSDKDidFinish",
-            "printedName": "microblinkPlatformSDKDidFinish(viewController:result:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MicroblinkPlatformResult",
-                "printedName": "MicroblinkPlatform.MicroblinkPlatformResult",
-                "usr": "s:18MicroblinkPlatform0aB6ResultV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18MicroblinkPlatform0aB11SDKDelegateP010microblinkB12SDKDidFinish14viewController6resultySo06UIViewH0C_AA0aB6ResultVtF",
-            "mangledName": "$s18MicroblinkPlatform0aB11SDKDelegateP010microblinkB12SDKDidFinish14viewController6resultySo06UIViewH0C_AA0aB6ResultVtF",
-            "moduleName": "MicroblinkPlatform",
-            "genericSig": "<τ_0_0 where τ_0_0 : MicroblinkPlatform.MicroblinkPlatformSDKDelegate>",
-            "sugared_genericSig": "<Self where Self : MicroblinkPlatform.MicroblinkPlatformSDKDelegate>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "microblinkPlatformSDKDidFinishCardScanStep",
-            "printedName": "microblinkPlatformSDKDidFinishCardScanStep(viewController:cardScanResult:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MicroblinkPlatformResultCardScanResult",
-                "printedName": "MicroblinkPlatform.MicroblinkPlatformResultCardScanResult",
-                "usr": "s:18MicroblinkPlatform0ab14ResultCardScanC0V"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18MicroblinkPlatform0aB11SDKDelegateP010microblinkB24SDKDidFinishCardScanStep14viewController04cardH6ResultySo06UIViewK0C_AA0abmghM0VtF",
-            "mangledName": "$s18MicroblinkPlatform0aB11SDKDelegateP010microblinkB24SDKDidFinishCardScanStep14viewController04cardH6ResultySo06UIViewK0C_AA0abmghM0VtF",
-            "moduleName": "MicroblinkPlatform",
-            "genericSig": "<τ_0_0 where τ_0_0 : MicroblinkPlatform.MicroblinkPlatformSDKDelegate>",
-            "sugared_genericSig": "<Self where Self : MicroblinkPlatform.MicroblinkPlatformSDKDelegate>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:18MicroblinkPlatform0aB11SDKDelegateP",
-        "mangledName": "$s18MicroblinkPlatform0aB11SDKDelegateP",
-        "moduleName": "MicroblinkPlatform",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "MicroblinkPlatformSDK",
-        "printedName": "MicroblinkPlatformSDK",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(serviceSettings:delegate:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "MicroblinkPlatformSDK",
-                "printedName": "MicroblinkPlatform.MicroblinkPlatformSDK",
-                "usr": "s:18MicroblinkPlatform0aB3SDKC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MicroblinkPlatformServiceSettings",
-                "printedName": "MicroblinkPlatform.MicroblinkPlatformServiceSettings",
-                "usr": "s:18MicroblinkPlatform0aB15ServiceSettingsC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any MicroblinkPlatform.MicroblinkPlatformSDKDelegate)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MicroblinkPlatformSDKDelegate",
-                    "printedName": "any MicroblinkPlatform.MicroblinkPlatformSDKDelegate",
-                    "usr": "s:18MicroblinkPlatform0aB11SDKDelegateP"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:18MicroblinkPlatform0aB3SDKC15serviceSettings8delegateAcA0ab7ServiceE0C_AA0aB11SDKDelegate_pSgtcfc",
-            "mangledName": "$s18MicroblinkPlatform0aB3SDKC15serviceSettings8delegateAcA0ab7ServiceE0C_AA0aB11SDKDelegate_pSgtcfc",
-            "moduleName": "MicroblinkPlatform",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "startSDK",
-            "printedName": "startSDK()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18MicroblinkPlatform0aB3SDKC05startC0So16UIViewControllerCyF",
-            "mangledName": "$s18MicroblinkPlatform0aB3SDKC05startC0So16UIViewControllerCyF",
-            "moduleName": "MicroblinkPlatform",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:18MicroblinkPlatform0aB3SDKC",
-        "mangledName": "$s18MicroblinkPlatform0aB3SDKC",
-        "moduleName": "MicroblinkPlatform",
-        "declAttributes": [
-          "Final",
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "SystemConfiguration",
-        "printedName": "SystemConfiguration",
+        "name": "Combine",
+        "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "MicroblinkPlatform"
       },
@@ -322,159 +34,6 @@
         "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "MicroblinkPlatformServiceSettings",
-        "printedName": "MicroblinkPlatformServiceSettings",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(workflowId:url:consent:additionalRequestHeaders:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "MicroblinkPlatformServiceSettings",
-                "printedName": "MicroblinkPlatform.MicroblinkPlatformServiceSettings",
-                "usr": "s:18MicroblinkPlatform0aB15ServiceSettingsC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "MicroblinkPlatformConsent",
-                "printedName": "MicroblinkPlatform.MicroblinkPlatformConsent",
-                "usr": "s:18MicroblinkPlatform0aB7ConsentV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.String : Swift.String]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Swift.String]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:18MicroblinkPlatform0aB15ServiceSettingsC10workflowId3url7consent24additionalRequestHeadersACSS_SSAA0aB7ConsentVSDyS2SGSgtcfc",
-            "mangledName": "$s18MicroblinkPlatform0aB15ServiceSettingsC10workflowId3url7consent24additionalRequestHeadersACSS_SSAA0aB7ConsentVSDyS2SGSgtcfc",
-            "moduleName": "MicroblinkPlatform",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:18MicroblinkPlatform0aB15ServiceSettingsC",
-        "mangledName": "$s18MicroblinkPlatform0aB15ServiceSettingsC",
-        "moduleName": "MicroblinkPlatform",
-        "declAttributes": [
-          "Final",
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
       },
       {
         "kind": "Import",
@@ -516,10 +75,126 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "MicroblinkPlatform",
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MicroblinkPlatformConsent",
+        "printedName": "MicroblinkPlatformConsent",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(userId:isProcessingStoringAllowed:isTrainingAllowed:note:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MicroblinkPlatformConsent",
+                "printedName": "MicroblinkPlatform.MicroblinkPlatformConsent",
+                "usr": "s:18MicroblinkPlatform0aB7ConsentV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18MicroblinkPlatform0aB7ConsentV6userId26isProcessingStoringAllowed0f8TrainingI04noteACSS_S2bSSSgtcfc",
+            "mangledName": "$s18MicroblinkPlatform0aB7ConsentV6userId26isProcessingStoringAllowed0f8TrainingI04noteACSS_S2bSSSgtcfc",
+            "moduleName": "MicroblinkPlatform",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18MicroblinkPlatform0aB7ConsentV",
+        "mangledName": "$s18MicroblinkPlatform0aB7ConsentV",
+        "moduleName": "MicroblinkPlatform",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "IDLiveFaceCamera",
+        "printedName": "IDLiveFaceCamera",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
       },
       {
         "kind": "Import",
@@ -4363,549 +4038,6 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "BlinkIDVerifyUX",
-        "printedName": "BlinkIDVerifyUX",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "IDLiveFaceCamera",
-        "printedName": "IDLiveFaceCamera",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "Photos",
-        "printedName": "Photos",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "BlinkIDVerifyUX",
-        "printedName": "BlinkIDVerifyUX",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "BlinkCard",
-        "printedName": "BlinkCard",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "BlinkIDVerify",
-        "printedName": "BlinkIDVerify",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "BlinkIDVerifyUX",
-        "printedName": "BlinkIDVerifyUX",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "IDLiveFaceCamera",
-        "printedName": "IDLiveFaceCamera",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "MicroblinkPlatformConsent",
-        "printedName": "MicroblinkPlatformConsent",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(userId:isProcessingStoringAllowed:isTrainingAllowed:note:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "MicroblinkPlatformConsent",
-                "printedName": "MicroblinkPlatform.MicroblinkPlatformConsent",
-                "usr": "s:18MicroblinkPlatform0aB7ConsentV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:18MicroblinkPlatform0aB7ConsentV6userId26isProcessingStoringAllowed0f8TrainingI04noteACSS_S2bSSSgtcfc",
-            "mangledName": "$s18MicroblinkPlatform0aB7ConsentV6userId26isProcessingStoringAllowed0f8TrainingI04noteACSS_S2bSSSgtcfc",
-            "moduleName": "MicroblinkPlatform",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:18MicroblinkPlatform0aB7ConsentV",
-        "mangledName": "$s18MicroblinkPlatform0aB7ConsentV",
-        "moduleName": "MicroblinkPlatform",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "MicroblinkPlatform"
-      },
-      {
-        "kind": "Import",
         "name": "BlinkCard",
         "printedName": "BlinkCard",
         "declKind": "Import",
@@ -4918,6 +4050,72 @@
         "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "MicroblinkPlatform"
       },
@@ -5061,8 +4259,77 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "BlinkIDVerify",
+        "printedName": "BlinkIDVerify",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "Photos",
+        "printedName": "Photos",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "MicroblinkPlatform"
       },
@@ -5089,18 +4356,15 @@
       },
       {
         "kind": "Import",
-        "name": "BlinkIDVerify",
-        "printedName": "BlinkIDVerify",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "MicroblinkPlatform",
-        "declAttributes": [
-          "AccessControl"
-        ]
+        "moduleName": "MicroblinkPlatform"
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "MicroblinkPlatform"
       },
@@ -5327,8 +4591,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "MicroblinkPlatform"
       },
@@ -5338,11 +4602,28 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "BlinkIDVerifyUX",
+        "printedName": "BlinkIDVerifyUX",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "MicroblinkPlatform"
       },
@@ -5367,6 +4648,51 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "MicroblinkPlatform"
       },
@@ -5634,6 +4960,708 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "SystemConfiguration",
+        "printedName": "SystemConfiguration",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MicroblinkPlatformSDKDelegate",
+        "printedName": "MicroblinkPlatformSDKDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "microblinkPlatformSDKDidClose",
+            "printedName": "microblinkPlatformSDKDidClose(viewController:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MicroblinkPlatform0aB11SDKDelegateP010microblinkB11SDKDidClose14viewControllerySo06UIViewH0C_tF",
+            "mangledName": "$s18MicroblinkPlatform0aB11SDKDelegateP010microblinkB11SDKDidClose14viewControllerySo06UIViewH0C_tF",
+            "moduleName": "MicroblinkPlatform",
+            "genericSig": "<τ_0_0 where τ_0_0 : MicroblinkPlatform.MicroblinkPlatformSDKDelegate>",
+            "sugared_genericSig": "<Self where Self : MicroblinkPlatform.MicroblinkPlatformSDKDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "microblinkPlatformSDKDidFinish",
+            "printedName": "microblinkPlatformSDKDidFinish(viewController:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MicroblinkPlatformResult",
+                "printedName": "MicroblinkPlatform.MicroblinkPlatformResult",
+                "usr": "s:18MicroblinkPlatform0aB6ResultV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MicroblinkPlatform0aB11SDKDelegateP010microblinkB12SDKDidFinish14viewController6resultySo06UIViewH0C_AA0aB6ResultVtF",
+            "mangledName": "$s18MicroblinkPlatform0aB11SDKDelegateP010microblinkB12SDKDidFinish14viewController6resultySo06UIViewH0C_AA0aB6ResultVtF",
+            "moduleName": "MicroblinkPlatform",
+            "genericSig": "<τ_0_0 where τ_0_0 : MicroblinkPlatform.MicroblinkPlatformSDKDelegate>",
+            "sugared_genericSig": "<Self where Self : MicroblinkPlatform.MicroblinkPlatformSDKDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "microblinkPlatformSDKDidFinishCardScanStep",
+            "printedName": "microblinkPlatformSDKDidFinishCardScanStep(viewController:cardScanResult:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MicroblinkPlatformResultCardScanResult",
+                "printedName": "MicroblinkPlatform.MicroblinkPlatformResultCardScanResult",
+                "usr": "s:18MicroblinkPlatform0ab14ResultCardScanC0V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MicroblinkPlatform0aB11SDKDelegateP010microblinkB24SDKDidFinishCardScanStep14viewController04cardH6ResultySo06UIViewK0C_AA0abmghM0VtF",
+            "mangledName": "$s18MicroblinkPlatform0aB11SDKDelegateP010microblinkB24SDKDidFinishCardScanStep14viewController04cardH6ResultySo06UIViewK0C_AA0abmghM0VtF",
+            "moduleName": "MicroblinkPlatform",
+            "genericSig": "<τ_0_0 where τ_0_0 : MicroblinkPlatform.MicroblinkPlatformSDKDelegate>",
+            "sugared_genericSig": "<Self where Self : MicroblinkPlatform.MicroblinkPlatformSDKDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:18MicroblinkPlatform0aB11SDKDelegateP",
+        "mangledName": "$s18MicroblinkPlatform0aB11SDKDelegateP",
+        "moduleName": "MicroblinkPlatform",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MicroblinkPlatformSDK",
+        "printedName": "MicroblinkPlatformSDK",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(serviceSettings:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MicroblinkPlatformSDK",
+                "printedName": "MicroblinkPlatform.MicroblinkPlatformSDK",
+                "usr": "s:18MicroblinkPlatform0aB3SDKC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MicroblinkPlatformServiceSettings",
+                "printedName": "MicroblinkPlatform.MicroblinkPlatformServiceSettings",
+                "usr": "s:18MicroblinkPlatform0aB15ServiceSettingsC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any MicroblinkPlatform.MicroblinkPlatformSDKDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MicroblinkPlatformSDKDelegate",
+                    "printedName": "any MicroblinkPlatform.MicroblinkPlatformSDKDelegate",
+                    "usr": "s:18MicroblinkPlatform0aB11SDKDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18MicroblinkPlatform0aB3SDKC15serviceSettings8delegateAcA0ab7ServiceE0C_AA0aB11SDKDelegate_pSgtcfc",
+            "mangledName": "$s18MicroblinkPlatform0aB3SDKC15serviceSettings8delegateAcA0ab7ServiceE0C_AA0aB11SDKDelegate_pSgtcfc",
+            "moduleName": "MicroblinkPlatform",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "startSDK",
+            "printedName": "startSDK()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18MicroblinkPlatform0aB3SDKC05startC0So16UIViewControllerCyF",
+            "mangledName": "$s18MicroblinkPlatform0aB3SDKC05startC0So16UIViewControllerCyF",
+            "moduleName": "MicroblinkPlatform",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:18MicroblinkPlatform0aB3SDKC",
+        "mangledName": "$s18MicroblinkPlatform0aB3SDKC",
+        "moduleName": "MicroblinkPlatform",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "BlinkIDVerifyUX",
+        "printedName": "BlinkIDVerifyUX",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MicroblinkPlatformServiceSettings",
+        "printedName": "MicroblinkPlatformServiceSettings",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(workflowId:url:consent:additionalRequestHeaders:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MicroblinkPlatformServiceSettings",
+                "printedName": "MicroblinkPlatform.MicroblinkPlatformServiceSettings",
+                "usr": "s:18MicroblinkPlatform0aB15ServiceSettingsC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MicroblinkPlatformConsent",
+                "printedName": "MicroblinkPlatform.MicroblinkPlatformConsent",
+                "usr": "s:18MicroblinkPlatform0aB7ConsentV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18MicroblinkPlatform0aB15ServiceSettingsC10workflowId3url7consent24additionalRequestHeadersACSS_SSAA0aB7ConsentVSDyS2SGSgtcfc",
+            "mangledName": "$s18MicroblinkPlatform0aB15ServiceSettingsC10workflowId3url7consent24additionalRequestHeadersACSS_SSAA0aB7ConsentVSDyS2SGSgtcfc",
+            "moduleName": "MicroblinkPlatform",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:18MicroblinkPlatform0aB15ServiceSettingsC",
+        "mangledName": "$s18MicroblinkPlatform0aB15ServiceSettingsC",
+        "moduleName": "MicroblinkPlatform",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
+        "name": "BlinkCard",
+        "printedName": "BlinkCard",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BlinkIDVerify",
+        "printedName": "BlinkIDVerify",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BlinkIDVerifyUX",
+        "printedName": "BlinkIDVerifyUX",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "IDLiveFaceCamera",
+        "printedName": "IDLiveFaceCamera",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MicroblinkPlatform"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -5674,132 +5702,6 @@
     "json_format_version": 8
   },
   "ConstValues": [
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FinalVerify\/FinalVerifyViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1166,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/MainScreen\/MainScreenStepsViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1868,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/MainScreen\/MainScreenStepsViewModel.swift",
-      "kind": "Array",
-      "offset": 916,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/MainScreen\/MainScreenStepsViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 972,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseError\/BaseErrorView.swift",
-      "kind": "StringLiteral",
-      "offset": 2585,
-      "length": 28,
-      "value": "\"Verification not available\""
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseError\/BaseErrorView.swift",
-      "kind": "StringLiteral",
-      "offset": 2640,
-      "length": 101,
-      "value": "\"Try again, making sure your eyes are open, your face is fully visible, and there’s good lighting.\""
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/MainScreen\/MainViewItemView.swift",
-      "kind": "FloatLiteral",
-      "offset": 113,
-      "length": 4,
-      "value": "32.0"
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseError\/BaseErrorViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2309,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FormUserInput\/FormView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 232,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FormUserInput\/FormView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 281,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FormUserInput\/FormView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 379,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FormUserInput\/FormView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 431,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FormUserInput\/FormView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 484,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FormUserInput\/FormView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 538,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FormUserInput\/FormView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 585,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/Extensions\/UIImage+MicroblinkPlatform.swift",
-      "kind": "FloatLiteral",
-      "offset": 94,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/StepsContainer\/BlinkIDUXViewWrappedHostingController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 544,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseError\/BaseErrorViewModel.swift",
-      "kind": "StringLiteral",
-      "offset": 359,
-      "length": 24,
-      "value": "\"mb-mp-button-try-again\""
-    },
     {
       "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FormUserInput\/FormViewModel.swift",
       "kind": "Array",
@@ -5892,67 +5794,81 @@
       "value": "\"^-?\\d+([.,]\\d+)?$\""
     },
     {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/StepsContainer\/FormViewWrappedHostingController.swift",
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/MainScreen\/MainScreenStepsViewModel.swift",
+      "kind": "Array",
+      "offset": 916,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/MainScreen\/MainScreenStepsViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1013,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/StepsContainer\/ScanningUXWrappedHostingController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 551,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseLoading\/BaseLoadingView.swift",
-      "kind": "StringLiteral",
-      "offset": 97,
-      "length": 20,
-      "value": "\"mb-mp-loading-text\""
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseLoading\/BaseLoadingView.swift",
-      "kind": "FloatLiteral",
-      "offset": 154,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseLoading\/BaseLoadingView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 192,
+      "offset": 972,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseAPI\/APIClient.swift",
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseAPI\/APIConstants.swift",
       "kind": "StringLiteral",
-      "offset": 232,
-      "length": 8,
-      "value": "\"DELETE\""
+      "offset": 86,
+      "length": 31,
+      "value": "\"\/api\/v1\/transaction\/%@\/resume\""
     },
     {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseAPI\/APIClient.swift",
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseAPI\/APIConstants.swift",
       "kind": "StringLiteral",
-      "offset": 260,
+      "offset": 149,
+      "length": 41,
+      "value": "\"\/api\/v1\/transaction\/%@\/multipart\/resume\""
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseAPI\/APIConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 230,
+      "length": 7,
+      "value": "\"1.5.0\""
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseAPI\/APIConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 264,
       "length": 5,
-      "value": "\"GET\""
+      "value": "\"ios\""
     },
     {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseAPI\/APIClient.swift",
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseError\/BaseErrorView.swift",
       "kind": "StringLiteral",
-      "offset": 286,
-      "length": 6,
-      "value": "\"POST\""
+      "offset": 2585,
+      "length": 28,
+      "value": "\"Verification not available\""
     },
     {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseAPI\/APIClient.swift",
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseError\/BaseErrorView.swift",
       "kind": "StringLiteral",
-      "offset": 312,
+      "offset": 2640,
+      "length": 101,
+      "value": "\"Try again, making sure your eyes are open, your face is fully visible, and there’s good lighting.\""
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FinalVerify\/FinalVerifyViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1166,
       "length": 5,
-      "value": "\"PUT\""
+      "value": "false"
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/Extensions\/UIImage+MicroblinkPlatform.swift",
+      "kind": "FloatLiteral",
+      "offset": 94,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseError\/BaseErrorViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2309,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/Models\/FormField.swift",
@@ -6151,6 +6067,62 @@
       "value": "\"Blob\""
     },
     {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/MainContainer\/MicroblinkPlatformMainContainerViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1429,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseError\/BaseErrorViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 359,
+      "length": 24,
+      "value": "\"mb-mp-button-try-again\""
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/StepsContainer\/BlinkIDUXViewWrappedHostingController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 544,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/Models\/Interactive.swift",
+      "kind": "StringLiteral",
+      "offset": 292,
+      "length": 7,
+      "value": "\"$type\""
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/Models\/Interactive.swift",
+      "kind": "StringLiteral",
+      "offset": 326,
+      "length": 12,
+      "value": "\"licenseKey\""
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/Models\/Interactive.swift",
+      "kind": "StringLiteral",
+      "offset": 365,
+      "length": 12,
+      "value": "\"formFields\""
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/Models\/Interactive.swift",
+      "kind": "StringLiteral",
+      "offset": 415,
+      "length": 23,
+      "value": "\"anonymizationSettings\""
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/Models\/Interactive.swift",
+      "kind": "StringLiteral",
+      "offset": 469,
+      "length": 16,
+      "value": "\"sendCardImages\""
+    },
+    {
       "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FormUserInput\/PhotoView.swift",
       "kind": "FloatLiteral",
       "offset": 392,
@@ -6193,95 +6165,130 @@
       "value": "true"
     },
     {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/StepsContainer\/StepsContainerViewController.swift",
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/PortraitMode\/PortraitModeViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 18955,
-      "length": 5,
-      "value": "false"
+      "offset": 1028,
+      "length": 4,
+      "value": "true"
     },
     {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseLoading\/BaseLoadingViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 859,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseAPI\/APIConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 86,
-      "length": 31,
-      "value": "\"\/api\/v1\/transaction\/%@\/resume\""
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseAPI\/APIConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 149,
-      "length": 41,
-      "value": "\"\/api\/v1\/transaction\/%@\/multipart\/resume\""
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseAPI\/APIConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 230,
-      "length": 7,
-      "value": "\"1.4.0\""
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseAPI\/APIConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 264,
-      "length": 5,
-      "value": "\"ios\""
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/Models\/Interactive.swift",
-      "kind": "StringLiteral",
-      "offset": 292,
-      "length": 7,
-      "value": "\"$type\""
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/Models\/Interactive.swift",
-      "kind": "StringLiteral",
-      "offset": 326,
-      "length": 12,
-      "value": "\"licenseKey\""
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/Models\/Interactive.swift",
-      "kind": "StringLiteral",
-      "offset": 365,
-      "length": 12,
-      "value": "\"formFields\""
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/Models\/Interactive.swift",
-      "kind": "StringLiteral",
-      "offset": 415,
-      "length": 23,
-      "value": "\"anonymizationSettings\""
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/Models\/Interactive.swift",
-      "kind": "StringLiteral",
-      "offset": 469,
-      "length": 16,
-      "value": "\"sendCardImages\""
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/MainScreen\/MainViewItemView.swift",
+      "kind": "FloatLiteral",
+      "offset": 113,
+      "length": 4,
+      "value": "32.0"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FaceCapture\/FaceShapeOverlayView.swift",
       "kind": "FloatLiteral",
-      "offset": 210,
+      "offset": 259,
+      "length": 4,
+      "value": "0.62"
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FaceCapture\/FaceShapeOverlayView.swift",
+      "kind": "FloatLiteral",
+      "offset": 266,
       "length": 3,
       "value": "0.8"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FaceCapture\/FaceShapeOverlayView.swift",
       "kind": "IntegerLiteral",
-      "offset": 238,
+      "offset": 294,
       "length": 1,
       "value": "4"
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/StepsContainer\/FormViewWrappedHostingController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1018,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseLoading\/BaseLoadingView.swift",
+      "kind": "StringLiteral",
+      "offset": 97,
+      "length": 20,
+      "value": "\"mb-mp-loading-text\""
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseLoading\/BaseLoadingView.swift",
+      "kind": "FloatLiteral",
+      "offset": 154,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseLoading\/BaseLoadingView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 192,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/StepsContainer\/ScanningUXWrappedHostingController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 551,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FormUserInput\/FormView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 275,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FormUserInput\/FormView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 324,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FormUserInput\/FormView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 422,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FormUserInput\/FormView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 474,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FormUserInput\/FormView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 527,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FormUserInput\/FormView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 581,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FormUserInput\/FormView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 628,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FormUserInput\/FormView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 679,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/CameraPermission\/CameraPermissionViewController.swift",
@@ -6291,81 +6298,130 @@
       "value": "false"
     },
     {
-      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/MainContainer\/MicroblinkPlatformMainContainerViewController.swift",
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/MainScreen\/MainScreenStepsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1429,
+      "offset": 1868,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseAPI\/APIClient.swift",
+      "kind": "StringLiteral",
+      "offset": 232,
+      "length": 8,
+      "value": "\"DELETE\""
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseAPI\/APIClient.swift",
+      "kind": "StringLiteral",
+      "offset": 260,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseAPI\/APIClient.swift",
+      "kind": "StringLiteral",
+      "offset": 286,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseAPI\/APIClient.swift",
+      "kind": "StringLiteral",
+      "offset": 312,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseLoading\/BaseLoadingViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 859,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FinalVerify\/FinalVerifyView.swift",
       "kind": "StringLiteral",
-      "offset": 2656,
+      "offset": 3219,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FinalVerify\/FinalVerifyView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2680,
+      "offset": 3243,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FinalVerify\/FinalVerifyView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2871,
+      "offset": 3434,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FinalVerify\/FinalVerifyView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2908,
+      "offset": 3471,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FinalVerify\/FinalVerifyView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2954,
+      "offset": 3517,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FinalVerify\/FinalVerifyView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3030,
+      "offset": 3593,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FinalVerify\/FinalVerifyView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3072,
+      "offset": 3635,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FinalVerify\/FinalVerifyView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3102,
+      "offset": 3665,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FinalVerify\/FinalVerifyView.swift",
       "kind": "Array",
-      "offset": 3124,
+      "offset": 3687,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FinalVerify\/FinalVerifyView.swift",
       "kind": "Array",
-      "offset": 3158,
+      "offset": 3721,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FinalVerify\/FinalVerifyView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3757,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/opt\/jenkins-ios-armini2\/E0\/idv-platform-ios\/MicroblinkPlatform\/MicroblinkPlatform\/StepsContainer\/StepsContainerViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 22404,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/pero\/Library\/Developer\/Xcode\/DerivedData\/MicroblinkPlatform-gzggoplevykqblgcapviolvhxvpc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MicroblinkPlatform\/IntermediateBuildFilesPath\/MicroblinkPlatform.build\/Release-iphoneos\/MicroblinkPlatform.build\/DerivedSources\/GeneratedAssetSymbols.swift",
@@ -6450,6 +6506,13 @@
       "offset": 2593,
       "length": 26,
       "value": "\"Main-Screen-Illustration\""
+    },
+    {
+      "filePath": "\/Users\/pero\/Library\/Developer\/Xcode\/DerivedData\/MicroblinkPlatform-gzggoplevykqblgcapviolvhxvpc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MicroblinkPlatform\/IntermediateBuildFilesPath\/MicroblinkPlatform.build\/Release-iphoneos\/MicroblinkPlatform.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2760,
+      "length": 21,
+      "value": "\"Portrait-Mode-Image\""
     }
   ]
 }

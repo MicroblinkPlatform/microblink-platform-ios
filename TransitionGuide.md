@@ -1,5 +1,8 @@
 # Transition Guide
 
+## v1.5.0
+- No changes
+
 ## v1.4.2
 - Before:
 ```

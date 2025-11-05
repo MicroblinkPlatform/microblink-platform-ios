@@ -15,14 +15,11 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public struct MicroblinkPlatformConsent {
-  public init(userId: Swift.String, isProcessingStoringAllowed: Swift.Bool, isTrainingAllowed: Swift.Bool, note: Swift.String?)
-}
-
 public struct MicroblinkPlatformResult {
   public let status: MicroblinkPlatform.MicroblinkPlatformResultStatus
   public let transactionId: Swift.String
 }
+
 public struct MicroblinkPlatformResultCardScanResult {
   public let cardNumber: Swift.String
   public let expiryDate: Swift.String
@@ -38,6 +35,8 @@ public enum MicroblinkPlatformResultStatus {
     get
   }
 }
+
+
 public protocol MicroblinkPlatformSDKDelegate : AnyObject {
   func microblinkPlatformSDKDidClose(viewController: UIKit.UIViewController)
   func microblinkPlatformSDKDidFinish(viewController: UIKit.UIViewController, result: MicroblinkPlatform.MicroblinkPlatformResult)
@@ -48,9 +47,13 @@ final public class MicroblinkPlatformSDK {
   final public func startSDK() -> UIKit.UIViewController
   @objc deinit
 }
+
 final public class MicroblinkPlatformServiceSettings {
   public init(workflowId: Swift.String, url: Swift.String, consent: MicroblinkPlatform.MicroblinkPlatformConsent, additionalRequestHeaders: [Swift.String : Swift.String]? = nil)
   @objc deinit
+}
+public struct MicroblinkPlatformConsent {
+  public init(userId: Swift.String, isProcessingStoringAllowed: Swift.Bool, isTrainingAllowed: Swift.Bool, note: Swift.String?)
 }
 @_hasMissingDesignatedInitializers final public class MicroblinkPlatformTheme {
   public static let shared: MicroblinkPlatform.MicroblinkPlatformTheme
@@ -95,7 +98,5 @@ final public class MicroblinkPlatformServiceSettings {
   final public var documentScanHelpButtonBackgroundColor: SwiftUICore.Color
   @objc deinit
 }
-
-
 extension MicroblinkPlatform.MicroblinkPlatformResultStatus : Swift.Equatable {}
 extension MicroblinkPlatform.MicroblinkPlatformResultStatus : Swift.Hashable {}
