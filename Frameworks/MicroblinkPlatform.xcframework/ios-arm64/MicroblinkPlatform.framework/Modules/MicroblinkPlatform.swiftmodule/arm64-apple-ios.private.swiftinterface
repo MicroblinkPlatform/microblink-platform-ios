@@ -8,6 +8,7 @@ import DeveloperToolsSupport
 import Foundation
 @_exported import MicroblinkPlatform
 import Photos
+import SafariServices
 import Swift
 import SwiftUI
 import SystemConfiguration
@@ -16,9 +17,8 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 public struct MicroblinkPlatformConsent {
-  public init(userId: Swift.String, isProcessingStoringAllowed: Swift.Bool, isTrainingAllowed: Swift.Bool, note: Swift.String?)
+  public init(userId: Swift.String, isProcessingStoringAllowed: Swift.Bool, isTrainingAllowed: Swift.Bool, isGivenOn: Foundation.Date, note: Swift.String? = nil)
 }
-
 @_hasMissingDesignatedInitializers final public class MicroblinkPlatformTheme {
   public static let shared: MicroblinkPlatform.MicroblinkPlatformTheme
   final public var primaryColor: UIKit.UIColor
@@ -63,9 +63,10 @@ public struct MicroblinkPlatformConsent {
   @objc deinit
 }
 public struct MicroblinkPlatformResult {
-  public let status: MicroblinkPlatform.MicroblinkPlatformResultStatus
   public let transactionId: Swift.String
+  public let status: MicroblinkPlatform.MicroblinkPlatformResultStatus
 }
+
 
 public struct MicroblinkPlatformResultCardScanResult {
   public let cardNumber: Swift.String
@@ -73,6 +74,8 @@ public struct MicroblinkPlatformResultCardScanResult {
   public let owner: Swift.String
   public let cvv: Swift.String
 }
+
+
 public enum MicroblinkPlatformResultStatus {
   case accept, review, reject
   public static func == (a: MicroblinkPlatform.MicroblinkPlatformResultStatus, b: MicroblinkPlatform.MicroblinkPlatformResultStatus) -> Swift.Bool
@@ -81,9 +84,16 @@ public enum MicroblinkPlatformResultStatus {
     get
   }
 }
-
+public enum MicroblinkPlatformCancelReason {
+  case userCanceled, consentDenied
+  public static func == (a: MicroblinkPlatform.MicroblinkPlatformCancelReason, b: MicroblinkPlatform.MicroblinkPlatformCancelReason) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public protocol MicroblinkPlatformSDKDelegate : AnyObject {
-  func microblinkPlatformSDKDidClose(viewController: UIKit.UIViewController)
+  func microblinkPlatformSDKDidClose(viewController: UIKit.UIViewController, cancelState: MicroblinkPlatform.MicroblinkPlatformCancelState)
   func microblinkPlatformSDKDidFinish(viewController: UIKit.UIViewController, result: MicroblinkPlatform.MicroblinkPlatformResult)
   func microblinkPlatformSDKDidFinishCardScanStep(viewController: UIKit.UIViewController, cardScanResult: MicroblinkPlatform.MicroblinkPlatformResultCardScanResult)
 }
@@ -92,11 +102,20 @@ final public class MicroblinkPlatformSDK {
   final public func startSDK() -> UIKit.UIViewController
   @objc deinit
 }
-
+public struct MicroblinkPlatformCancelState {
+  public let transactionId: Swift.String?
+  public let cancelReason: MicroblinkPlatform.MicroblinkPlatformCancelReason
+}
 final public class MicroblinkPlatformServiceSettings {
+  final public var getWorkflowInfo: Swift.String
+  final public var startTransaction: Swift.String
+  final public var cancelWorkflow: Swift.String
   public init(workflowId: Swift.String, url: Swift.String, consent: MicroblinkPlatform.MicroblinkPlatformConsent, additionalRequestHeaders: [Swift.String : Swift.String]? = nil)
   @objc deinit
 }
 
+
 extension MicroblinkPlatform.MicroblinkPlatformResultStatus : Swift.Equatable {}
 extension MicroblinkPlatform.MicroblinkPlatformResultStatus : Swift.Hashable {}
+extension MicroblinkPlatform.MicroblinkPlatformCancelReason : Swift.Equatable {}
+extension MicroblinkPlatform.MicroblinkPlatformCancelReason : Swift.Hashable {}

@@ -58,6 +58,83 @@
         }
       }
     },
+    "mb-mp-consent-button-consent" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consent"
+          }
+        }
+      }
+    },
+    "mb-mp-consent-button-do-not-consent" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Do not consent"
+          }
+        }
+      }
+    },
+    "mb-mp-consent-privacy-policy-consent-switch" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I consent to the use of my personal data, including biometric data, by the provider for the purpose of optimizing its technology. (Optional)"
+          }
+        }
+      }
+    },
+    "mb-mp-consent-privacy-policy-description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your choices help us protect your personal information and improve our technology while maintaining the highest standards of data privacy as described in the "
+          }
+        }
+      }
+    },
+    "mb-mp-consent-privacy-policy-keyword" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privacy Notice"
+          }
+        }
+      }
+    },
+    "mb-mp-consent-subtitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Store and/or access personal information which may include biometric data, for the purpose of verifying your identity."
+          }
+        }
+      }
+    },
+    "mb-mp-consent-title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "We need your consent to:"
+          }
+        }
+      }
+    },
     "mb-mp-error-subtitle-invalid-input" : {
       "localizations" : {
         "en" : {
