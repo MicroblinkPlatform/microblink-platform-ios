@@ -13,7 +13,7 @@ struct ContentView: View {
 #warning ("Please check documentation: https://github.com/MicroblinkPlatform/microblink-platform-ios/tree/main?tab=readme-ov-file#microblinkplatform-server-compatibility")
             MicroblinkPlatformWrapperView(
                 workflowId: "686672a5f544c6f7456830b9",
-                url: "https://api.us-east.platform.microblink.com/proxy/api/v1/transaction",
+                url: "https://api.us-east.platform.microblink.com/proxy/api/v1",
                 additionalRequestHeaders: nil
             ) { result in
                 showSDK = false
@@ -46,6 +46,7 @@ struct MicroblinkPlatformWrapperView: UIViewControllerRepresentable {
             userId: "microblink-public-sample-app-ios-user-id",
             isProcessingStoringAllowed: true,
             isTrainingAllowed: true,
+            isGivenOn: Date.now,
             note: nil
         )
         
@@ -87,7 +88,7 @@ struct MicroblinkPlatformWrapperView: UIViewControllerRepresentable {
             }
         }
 
-        func microblinkPlatformSDKDidClose(viewController: UIViewController) {
+        func microblinkPlatformSDKDidClose(viewController: UIViewController, cancelState: MicroblinkPlatformCancelState) {
             print("Sample microblinkPlatformSDKDidClose")
             viewController.dismiss(animated: true) {
                 self.onClose()

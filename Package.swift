@@ -40,8 +40,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "MicroblinkPlatform",
-            url: "https://github.com/MicroblinkPlatform/microblink-platform-ios/releases/download/v1.5.0/MicroblinkPlatform.xcframework.zip",
-            checksum: "859d17f9a2996549ff4d62aaa8c23d57d66e6017fac5f7d7533825ae1b9a1ac6"
+            url: "https://github.com/MicroblinkPlatform/microblink-platform-ios/releases/download/v1.7.0/MicroblinkPlatform.xcframework.zip",
+            checksum: "ec39e3776e31aa1d2be4ace4107037804a3086f799fc28b741fc45ee95231d86"
         ),
         .binaryTarget(
             name: "BlinkIDVerifyUX",
@@ -55,8 +55,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "BlinkCard",
-            url:"https://github.com/blinkcard/blinkcard-ios/releases/download/v2.11.1/BlinkCard.xcframework.zip",
-            checksum:"19b5b14e7205a7a3ebc5365ad3d2eabbb5edfc930031047b64dbc680110ab6de"
+            url:"https://github.com/blinkcard/blinkcard-ios/releases/download/v2.12.0/BlinkCard.xcframework.zip",
+            checksum:"accc56a3b24019643739d2bc183b8fd36379e8b6a6e283458cfffbb991f4a22b"
         ),
         .binaryTarget(
             name: "IDLiveFaceCamera",
