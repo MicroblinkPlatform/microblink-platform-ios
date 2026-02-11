@@ -14,6 +14,7 @@ class ViewController: UIViewController {
             userId: "microblink-public-sample-app-ios-user-id",
             isProcessingStoringAllowed: true,
             isTrainingAllowed: true,
+            isGivenOn: Date.now,
             note: nil
         )
 
@@ -21,7 +22,7 @@ class ViewController: UIViewController {
 #warning ("Please check documentation: https://github.com/MicroblinkPlatform/microblink-platform-ios/tree/main?tab=readme-ov-file#microblinkplatform-server-compatibility")
         let serviceSettings = MicroblinkPlatformServiceSettings(
             workflowId: "686672a5f544c6f7456830b9",
-            url: "https://api.us-east.platform.microblink.com/proxy/api/v1/transaction",
+            url: "https://api.us-east.platform.microblink.com/proxy/api/v1",
             consent: consent,
             additionalRequestHeaders: nil
         )
@@ -43,7 +44,7 @@ extension ViewController: MicroblinkPlatformSDKDelegate {
         print("Sample microblinkPlatformSDKDidFinish: \(result)")
     }
     
-    func microblinkPlatformSDKDidClose(viewController: UIViewController) {
+    func microblinkPlatformSDKDidClose(viewController: UIViewController, cancelState: MicroblinkPlatformCancelState) {
         viewController.dismiss(animated: true)
         print("Sample microblinkPlatformSDKDidClose")
     }

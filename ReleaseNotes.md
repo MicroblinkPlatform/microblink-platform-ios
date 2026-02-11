@@ -1,5 +1,22 @@
 # Release notes
 
+## v1.7.0
+### Breaking changes
+- The `MicroblinkPlatformServiceSettings` parameter has been updated:
+    - Previously, for `url`, you provided the full API transaction endpoint for your proxy, for example: `https://www.myproxy.com/api/v1/transaction`.
+    - Now, `url` accepts your proxy's base domain + API suffix, **without** the final URL path. For example: `https://www.myproxy.com/api/v1`.
+- `MicroblinkPlatformConsent` now **requires** `givenOn`. This value (a `Date`) represents when the consent is given.
+- In `MicroblinkPlatformSDKDelegate`, the function `microblinkPlatformSDKDidClose` is expanded with `cancelState`. This type (`MicroblinkPlatformCancelState`) has two values:
+	- optional `transactionId`
+	- `cancelReason` enum which returns `userCanceled` or `consentDenied`
+
+### New features
+- Added a consent screen which is shown if `isProcessingStoringAllowed` in `MicroblinkPlatformConsent` is `false`. This means that, if you haven't collected consent from your users and provided it to us, we will collect it ourselves.
+- In `MicroblinkPlatformServiceSettings`, added new string properties for overriding proxy endpoints:
+	- `getWorkflowInfo`
+	- `startTransaction`
+	- `cancelWorkflow`
+
 ## v1.5.0
 ### What's new
 - We've added kiosk mode support. This is helpful in applications where a tablet device is mounted on a wall, and your users are expected to scan their documents using the front camera only. 

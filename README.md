@@ -41,7 +41,7 @@ Make sure that you use a compatible Workflow version for the MicroblinkPlatform 
 
 - File > Swift Packages > Add Package Dependency
 - Add https://github.com/MicroblinkPlatform/microblink-platform-ios.git
-- Select **Exact Version** - 1.5.0
+- Select **Exact Version**, add latest released version
 
 ### Clone
 
@@ -62,6 +62,7 @@ let consent = MicroblinkPlatformConsent(
     userId: user_id,
     isProcessingStoringAllowed: true,
     isTrainingAllowed: true,
+    isGivenOn: Date.now,
     note: nil
 )
         
@@ -92,7 +93,7 @@ func microblinkPlatformSDKDidFinish(viewController: UIViewController, result: Mi
     viewController.dismiss(animated: true)
 }
     
-func microblinkPlatformSDKDidClose(viewController: UIViewController) {
+func microblinkPlatformSDKDidClose(viewController: UIViewController, cancelState: MicroblinkPlatformCancelState) {
     viewController.dismiss(animated: true)
 }
 
@@ -151,6 +152,7 @@ struct MicroblinkPlatformWrapperView: UIViewControllerRepresentable {
             userId: user_id,
             isProcessingStoringAllowed: true,
             isTrainingAllowed: true,
+            isGivenOn: Date.now,
             note: nil
         )
         
@@ -195,7 +197,7 @@ struct MicroblinkPlatformWrapperView: UIViewControllerRepresentable {
             }
         }
 
-        func microblinkPlatformSDKDidClose(viewController: UIViewController) {
+        func microblinkPlatformSDKDidClose(viewController: UIViewController, cancelState: MicroblinkPlatformCancelState) {
             viewController.dismiss(animated: true) {
                 self.onClose()
             }
