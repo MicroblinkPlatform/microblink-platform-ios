@@ -1,5 +1,8 @@
 # Transition Guide
 
+## v1.8.0
+- No changes
+
 ## v1.7.0
 ### Breaking changes
 - The `MicroblinkPlatformServiceSettings` parameter has been updated:
