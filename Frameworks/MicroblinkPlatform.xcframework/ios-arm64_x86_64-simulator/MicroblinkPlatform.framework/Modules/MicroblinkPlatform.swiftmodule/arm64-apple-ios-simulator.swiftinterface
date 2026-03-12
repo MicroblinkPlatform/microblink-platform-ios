@@ -16,12 +16,6 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-
-public struct MicroblinkPlatformResult {
-  public let transactionId: Swift.String
-  public let status: MicroblinkPlatform.MicroblinkPlatformResultStatus
-}
-
 public struct MicroblinkPlatformResultCardScanResult {
   public let cardNumber: Swift.String
   public let expiryDate: Swift.String
@@ -36,7 +30,6 @@ public enum MicroblinkPlatformResultStatus {
     get
   }
 }
-
 public enum MicroblinkPlatformCancelReason {
   case userCanceled, consentDenied
   public static func == (a: MicroblinkPlatform.MicroblinkPlatformCancelReason, b: MicroblinkPlatform.MicroblinkPlatformCancelReason) -> Swift.Bool
@@ -45,7 +38,6 @@ public enum MicroblinkPlatformCancelReason {
     get
   }
 }
-
 public protocol MicroblinkPlatformSDKDelegate : AnyObject {
   func microblinkPlatformSDKDidClose(viewController: UIKit.UIViewController, cancelState: MicroblinkPlatform.MicroblinkPlatformCancelState)
   func microblinkPlatformSDKDidFinish(viewController: UIKit.UIViewController, result: MicroblinkPlatform.MicroblinkPlatformResult)
@@ -68,6 +60,8 @@ final public class MicroblinkPlatformServiceSettings {
   public init(workflowId: Swift.String, url: Swift.String, consent: MicroblinkPlatform.MicroblinkPlatformConsent, additionalRequestHeaders: [Swift.String : Swift.String]? = nil)
   @objc deinit
 }
+
+
 
 public struct MicroblinkPlatformConsent {
   public init(userId: Swift.String, isProcessingStoringAllowed: Swift.Bool, isTrainingAllowed: Swift.Bool, isGivenOn: Foundation.Date, note: Swift.String? = nil)
@@ -115,6 +109,12 @@ public struct MicroblinkPlatformConsent {
   final public var documentScanHelpButtonBackgroundColor: SwiftUICore.Color
   @objc deinit
 }
+
+public struct MicroblinkPlatformResult {
+  public let transactionId: Swift.String
+  public let status: MicroblinkPlatform.MicroblinkPlatformResultStatus
+}
+
 extension MicroblinkPlatform.MicroblinkPlatformResultStatus : Swift.Equatable {}
 extension MicroblinkPlatform.MicroblinkPlatformResultStatus : Swift.Hashable {}
 extension MicroblinkPlatform.MicroblinkPlatformCancelReason : Swift.Equatable {}
