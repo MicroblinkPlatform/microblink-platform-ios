@@ -7,6 +7,27 @@
     "%@" : {
 
     },
+    "%@ MB" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ MB"
+          }
+        }
+      }
+    },
+    "mb-mp-button-close" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Close"
+          }
+        }
+      }
+    },
     "mb-mp-button-try-again" : {
       "localizations" : {
         "en" : {
@@ -54,6 +75,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cancel"
+          }
+        }
+      }
+    },
+    "mb-mp-change" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Change"
           }
         }
       }
@@ -135,6 +167,17 @@
         }
       }
     },
+    "mb-mp-error-subtitle-incorrect-document" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please double-check that you’re uploading the correct document type and try again."
+          }
+        }
+      }
+    },
     "mb-mp-error-subtitle-invalid-input" : {
       "localizations" : {
         "en" : {
@@ -170,7 +213,40 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Try scanning a different document."
+            "value" : "Please try again and upload a supported document."
+          }
+        }
+      }
+    },
+    "mb-mp-error-subtitle-upload-again" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Try uploading your document again ensuring the image is clear and fully visible."
+          }
+        }
+      }
+    },
+    "mb-mp-error-subtitle-verification-not-available" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please try again later or contact support."
+          }
+        }
+      }
+    },
+    "mb-mp-error-title-incorrect-document" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Incorrect document type"
           }
         }
       }
@@ -211,6 +287,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Document not accepted"
+          }
+        }
+      }
+    },
+    "mb-mp-error-title-upload-again" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upload again"
           }
         }
       }
@@ -345,6 +432,17 @@
         }
       }
     },
+    "mb-mp-file-too-large" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "File too large. Max size is %@ MB."
+          }
+        }
+      }
+    },
     "mb-mp-form-alert-ok" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -364,6 +462,28 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Attach File"
+          }
+        }
+      }
+    },
+    "mb-mp-form-change-document-type-message" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This will remove the uploaded file."
+          }
+        }
+      }
+    },
+    "mb-mp-form-change-document-type-tit" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Change document type?"
           }
         }
       }
@@ -794,6 +914,156 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Scan another document"
+          }
+        }
+      }
+    },
+    "mb-mp-upload-documents-attach-file-title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Attach File"
+          }
+        }
+      }
+    },
+    "mb-mp-upload-documents-choose-photo-title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose Photo"
+          }
+        }
+      }
+    },
+    "mb-mp-upload-documents-select" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select"
+          }
+        }
+      }
+    },
+    "mb-mp-upload-documents-select-document-type" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select document type"
+          }
+        }
+      }
+    },
+    "mb-mp-upload-documents-title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upload a document"
+          }
+        }
+      }
+    },
+    "mb-mp-upload-id-document-back-title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Back"
+          }
+        }
+      }
+    },
+    "mb-mp-upload-id-document-description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "When taking a photo of your ID, follow these guidelines to ensure a successful upload:"
+          }
+        }
+      }
+    },
+    "mb-mp-upload-id-document-description-detailed" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• Place the document on a flat, well-lit surface and avoid reflections or glare.\n• Make sure all four edges are visible on the camera screen.\n• Center the document and ensure all details are clearly readable."
+          }
+        }
+      }
+    },
+    "mb-mp-upload-id-document-front-title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Front"
+          }
+        }
+      }
+    },
+    "mb-mp-upload-id-document-subtitle" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prepare a document for upload"
+          }
+        }
+      }
+    },
+    "mb-mp-upload-id-document-title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upload a document"
+          }
+        }
+      }
+    },
+    "mb-mp-upload-non-id-document-double-side-title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "One file per side. Upload front and back separately."
+          }
+        }
+      }
+    },
+    "mb-mp-upload-non-id-document-subtitle" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prepare a document for upload"
+          }
+        }
+      }
+    },
+    "mb-mp-upload-non-id-document-title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upload a document"
           }
         }
       }

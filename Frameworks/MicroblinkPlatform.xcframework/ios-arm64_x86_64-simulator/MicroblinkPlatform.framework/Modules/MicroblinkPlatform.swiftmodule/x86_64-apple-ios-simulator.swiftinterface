@@ -16,6 +16,12 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+
+public struct MicroblinkPlatformResult {
+  public let transactionId: Swift.String
+  public let status: MicroblinkPlatform.MicroblinkPlatformResultStatus
+}
+
 public struct MicroblinkPlatformResultCardScanResult {
   public let cardNumber: Swift.String
   public let expiryDate: Swift.String
@@ -38,6 +44,7 @@ public enum MicroblinkPlatformCancelReason {
     get
   }
 }
+
 public protocol MicroblinkPlatformSDKDelegate : AnyObject {
   func microblinkPlatformSDKDidClose(viewController: UIKit.UIViewController, cancelState: MicroblinkPlatform.MicroblinkPlatformCancelState)
   func microblinkPlatformSDKDidFinish(viewController: UIKit.UIViewController, result: MicroblinkPlatform.MicroblinkPlatformResult)
@@ -107,14 +114,32 @@ public struct MicroblinkPlatformConsent {
   final public var documentScanReticleTooltipFont: SwiftUICore.Font
   final public var documentScanHelpButtonForegroundColor: SwiftUICore.Color
   final public var documentScanHelpButtonBackgroundColor: SwiftUICore.Color
+  final public var documentUploadTitleColor: UIKit.UIColor
+  final public var documentUploadTitleFont: UIKit.UIFont
+  final public var documentUploadDescriptionColor: UIKit.UIColor
+  final public var documentUploadDescriptionFont: UIKit.UIFont
+  final public var documentUploadSelectDocumentColor: UIKit.UIColor
+  final public var documentUploadSelectDocumentFont: UIKit.UIFont
+  final public var documentUploadSelectDocumentPickerColor: UIKit.UIColor
+  final public var documentUploadSelectDocumentPickerFont: UIKit.UIFont
+  final public var documentUploadSelectedDocumentTypeTitleColor: UIKit.UIColor
+  final public var documentUploadSelectedDocumentTypeTitleFont: UIKit.UIFont
+  final public var documentUploadSelectedDocumentTypeDescriptionColor: UIKit.UIColor
+  final public var documentUploadSelectedDocumentTypeDescriptionFont: UIKit.UIFont
+  final public var documentUploadPlaceholderImage: UIKit.UIImage
+  final public var documentUploadPlaceholderTitleColor: UIKit.UIColor
+  final public var documentUploadPlaceholderTitleFont: UIKit.UIFont
+  final public var documentUploadPlaceholderDescriptionColor: UIKit.UIColor
+  final public var documentUploadPlaceholderDescriptionFont: UIKit.UIFont
+  final public var documentUploadRemoveFileImage: UIKit.UIImage
+  final public var documentUploadSubmitButtonDisabledColor: UIKit.UIColor
+  final public var documentUploadSizeErrorFont: UIKit.UIFont
+  final public var documentUploadSizeErrorColor: UIKit.UIColor
+  final public var documentUploadDoubleSideViewFont: UIKit.UIFont
+  final public var documentUploadDoubleSideViewTextColor: UIKit.UIColor
+  final public var documentUploadDoubleSideViewBackgroundColor: UIKit.UIColor
   @objc deinit
 }
-
-public struct MicroblinkPlatformResult {
-  public let transactionId: Swift.String
-  public let status: MicroblinkPlatform.MicroblinkPlatformResultStatus
-}
-
 extension MicroblinkPlatform.MicroblinkPlatformResultStatus : Swift.Equatable {}
 extension MicroblinkPlatform.MicroblinkPlatformResultStatus : Swift.Hashable {}
 extension MicroblinkPlatform.MicroblinkPlatformCancelReason : Swift.Equatable {}
