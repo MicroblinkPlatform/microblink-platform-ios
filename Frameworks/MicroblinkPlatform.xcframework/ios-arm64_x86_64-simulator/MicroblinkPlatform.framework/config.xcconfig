@@ -9,9 +9,9 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 // Version settings
-SDK_VERSION = 1.8.0
-MARKETING_VERSION = 1.8.0
-CURRENT_PROJECT_VERSION = 1.8.0
+SDK_VERSION = 1.9.0
+MARKETING_VERSION = 1.9.0
+CURRENT_PROJECT_VERSION = 1.9.0
 
 // Strip settings
 STRIPFLAGS = "-rSTx"
