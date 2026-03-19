@@ -45,13 +45,13 @@ let package = Package(
         ),
         .binaryTarget(
             name: "BlinkIDVerifyUX",
-            url:"https://github.com/BlinkID/blinkid-verify-ios/releases/download/v3.14.2/BlinkIDVerifyUX.xcframework.zip",
-            checksum:"ac0b466c9c2b80b5839037bb89a9991678498913cc19a983bf77a1ea852be802"
+            url:"https://github.com/BlinkID/blinkid-verify-ios/releases/download/v3.14.1/BlinkIDVerifyUX.xcframework.zip",
+            checksum:"c777e59e721ac09fa6f1e22186d3639e721c5b5643d36ec9bac2ffbea93e590e"
         ),
         .binaryTarget(
             name: "BlinkIDVerify",
-            url:"https://github.com/BlinkID/blinkid-verify-ios/releases/download/v3.14.2/BlinkIDVerify.xcframework.zip",
-            checksum:"ce41d355a15610676809f933bf98de550e6fe3daf2aa2853c84accc45a221692"
+            url:"https://github.com/BlinkID/blinkid-verify-ios/releases/download/v3.14.1/BlinkIDVerify.xcframework.zip",
+            checksum:"8ad4f400cea180a73e178dd8faefebe4219be90140e8e6ff8e72b35d152cdad9"
         ),
         .binaryTarget(
             name: "BlinkCard",
