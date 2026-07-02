@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
 // swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MicroblinkPlatform
-// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import AVFoundation
 import Combine
 import DeveloperToolsSupport
@@ -17,16 +17,38 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 
+
+
+
+
+
+
+public enum MicroblinkPlatformCancelReason {
+  case userCanceled, consentDenied
+  public static func == (a: MicroblinkPlatform.MicroblinkPlatformCancelReason, b: MicroblinkPlatform.MicroblinkPlatformCancelReason) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct MicroblinkPlatformCancelState {
+  public let transactionId: Swift.String?
+  public let cancelReason: MicroblinkPlatform.MicroblinkPlatformCancelReason
+}
+public struct MicroblinkPlatformConsent {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(userId: Swift.String, isProcessingStoringAllowed: Swift.Bool, isTrainingAllowed: Swift.Bool, isGivenOn: Foundation.Date, note: Swift.String? = nil)
+  #endif
+}
 public struct MicroblinkPlatformResult {
   public let transactionId: Swift.String
   public let status: MicroblinkPlatform.MicroblinkPlatformResultStatus
 }
-
 public struct MicroblinkPlatformResultCardScanResult {
   public let cardNumber: Swift.String
-  public let expiryDate: Swift.String
-  public let owner: Swift.String
-  public let cvv: Swift.String
+  public let expiryDate: Swift.String?
+  public let owner: Swift.String?
+  public let cvv: Swift.String?
 }
 public enum MicroblinkPlatformResultStatus {
   case accept, review, reject
@@ -36,42 +58,26 @@ public enum MicroblinkPlatformResultStatus {
     get
   }
 }
-public enum MicroblinkPlatformCancelReason {
-  case userCanceled, consentDenied
-  public static func == (a: MicroblinkPlatform.MicroblinkPlatformCancelReason, b: MicroblinkPlatform.MicroblinkPlatformCancelReason) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-
 public protocol MicroblinkPlatformSDKDelegate : AnyObject {
   func microblinkPlatformSDKDidClose(viewController: UIKit.UIViewController, cancelState: MicroblinkPlatform.MicroblinkPlatformCancelState)
   func microblinkPlatformSDKDidFinish(viewController: UIKit.UIViewController, result: MicroblinkPlatform.MicroblinkPlatformResult)
   func microblinkPlatformSDKDidFinishCardScanStep(viewController: UIKit.UIViewController, cardScanResult: MicroblinkPlatform.MicroblinkPlatformResultCardScanResult)
 }
 final public class MicroblinkPlatformSDK {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(serviceSettings: MicroblinkPlatform.MicroblinkPlatformServiceSettings, delegate: (any MicroblinkPlatform.MicroblinkPlatformSDKDelegate)?)
+  #endif
   final public func startSDK() -> UIKit.UIViewController
   @objc deinit
-}
-
-public struct MicroblinkPlatformCancelState {
-  public let transactionId: Swift.String?
-  public let cancelReason: MicroblinkPlatform.MicroblinkPlatformCancelReason
 }
 final public class MicroblinkPlatformServiceSettings {
   final public var getWorkflowInfo: Swift.String
   final public var startTransaction: Swift.String
   final public var cancelWorkflow: Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(workflowId: Swift.String, url: Swift.String, consent: MicroblinkPlatform.MicroblinkPlatformConsent, additionalRequestHeaders: [Swift.String : Swift.String]? = nil)
+  #endif
   @objc deinit
-}
-
-
-
-public struct MicroblinkPlatformConsent {
-  public init(userId: Swift.String, isProcessingStoringAllowed: Swift.Bool, isTrainingAllowed: Swift.Bool, isGivenOn: Foundation.Date, note: Swift.String? = nil)
 }
 @_hasMissingDesignatedInitializers final public class MicroblinkPlatformTheme {
   public static let shared: MicroblinkPlatform.MicroblinkPlatformTheme
@@ -140,7 +146,7 @@ public struct MicroblinkPlatformConsent {
   final public var documentUploadDoubleSideViewBackgroundColor: UIKit.UIColor
   @objc deinit
 }
-extension MicroblinkPlatform.MicroblinkPlatformResultStatus : Swift.Equatable {}
-extension MicroblinkPlatform.MicroblinkPlatformResultStatus : Swift.Hashable {}
 extension MicroblinkPlatform.MicroblinkPlatformCancelReason : Swift.Equatable {}
 extension MicroblinkPlatform.MicroblinkPlatformCancelReason : Swift.Hashable {}
+extension MicroblinkPlatform.MicroblinkPlatformResultStatus : Swift.Equatable {}
+extension MicroblinkPlatform.MicroblinkPlatformResultStatus : Swift.Hashable {}

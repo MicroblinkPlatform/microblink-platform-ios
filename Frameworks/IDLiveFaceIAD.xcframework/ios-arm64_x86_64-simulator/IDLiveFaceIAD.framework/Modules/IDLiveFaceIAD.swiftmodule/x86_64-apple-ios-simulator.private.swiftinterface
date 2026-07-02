@@ -1,16 +1,19 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name IDLiveFaceIAD
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import AVFoundation
 import CommonCrypto
 import CoreGraphics
 import CoreImage
+import CoreMedia
 import CryptoKit
 import Darwin
 import Dispatch
 import Foundation
 @_exported import IDLiveFaceIAD
 import MachO
+import MobileCoreServices
 import Security
 import Swift
 import UIKit
@@ -18,24 +21,143 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 import os
-@_spi(Private) @_hasMissingDesignatedInitializers public class IADUtils {
-  @_spi(Private) public static func iadDeviceInfo() -> [Swift.String : Any]
-  @_spi(Private) @objc deinit
-}
-@_spi(Private) @_inheritsConvenienceInitializers @objc public class IADCallReceiverHelper : ObjectiveC.NSObject {
-  @_spi(Private) @objc public static func call(_ params: [Swift.String : Any]) -> Any
-  @_spi(Private) @objc override dynamic public init()
-  @_spi(Private) @objc deinit
-}
-@_spi(PrivateClient) public enum IADImageFormat : Swift.Equatable {
-  @_spi(PrivateClient) case png
-  @_spi(PrivateClient) case jpeg(CoreFoundation.CGFloat)
-  @_spi(PrivateClient) case heic(CoreFoundation.CGFloat)
-  @_spi(PrivateClient) case jpeg2000(CoreFoundation.CGFloat)
-  @_spi(PrivateClient) case video
-  @_spi(PrivateClient) public var ext: Swift.String {
-    @_spi(PrivateClient) get
+public enum PayloadType : Swift.Int {
+  case unspecified
+  case face
+  case document
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
   }
-  @_spi(PrivateClient) public func sameJpegQuality(otherFormat: IDLiveFaceIAD.IADImageFormat) -> Swift.Bool
-  @_spi(PrivateClient) public static func == (a: IDLiveFaceIAD.IADImageFormat, b: IDLiveFaceIAD.IADImageFormat) -> Swift.Bool
 }
+extension IDLiveFaceIAD.DocIADController {
+  public typealias Completion = (Swift.Result<Foundation.Data, any Swift.Error>) -> Swift.Void
+  convenience public init(ciContext: CoreImage.CIContext = CIContext(), dispatchQueue: Dispatch.DispatchQueue = DocIADController.defaultDispatchQueue())
+  final public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+  final public func isReady(qualifiedImage: any IDLiveFaceIAD.ImageProtocol, completion: @escaping (Swift.Bool) -> Swift.Void)
+  final public func reset()
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func createIADBundle(key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil) throws -> Foundation.Data
+  #endif
+  final public func isReady(qualifiedImage: any IDLiveFaceIAD.ImageProtocol) async -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func createIADBundle(key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil, completion: @escaping IDLiveFaceIAD.DocIADController.Completion)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func createIADBundle(key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil) async throws -> Foundation.Data
+  #endif
+}
+extension IDLiveFaceIAD.DocIADController {
+  final public class func defaultDispatchQueue() -> Dispatch.DispatchQueue
+}
+public enum PayloadSize {
+  case normal
+  case small
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(stringValue: Swift.String)
+  #endif
+  public static func == (a: IDLiveFaceIAD.PayloadSize, b: IDLiveFaceIAD.PayloadSize) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension IDLiveFaceIAD.DocIADController {
+  public enum PhotoFormat {
+    case jpeg
+    case png
+    public static func == (a: IDLiveFaceIAD.DocIADController.PhotoFormat, b: IDLiveFaceIAD.DocIADController.PhotoFormat) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  convenience public init(format: IDLiveFaceIAD.DocIADController.PhotoFormat, ciContext: CoreImage.CIContext = CIContext(), dispatchQueue: Dispatch.DispatchQueue = DocIADController.defaultDispatchQueue())
+}
+public enum CreateBundleError : Foundation.LocalizedError {
+  case notEnoughImages
+  case invalidFormatType
+  case imageBinaryRepresentation
+  case cameraIsNotReady
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var errorDescription: Swift.String? {
+    get
+  }
+  #endif
+  public static func == (a: IDLiveFaceIAD.CreateBundleError, b: IDLiveFaceIAD.CreateBundleError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol Timestampable {
+  var timestamp: Foundation.Date { get }
+}
+@_inheritsConvenienceInitializers @available(*, deprecated, message: "Use Face/Doc IADController.createIADBundle(...) instead")
+@objc public class IADCallReceiverHelper : ObjectiveC.NSObject {
+  @available(*, deprecated, message: "Use Face/Doc IADController.createIADBundle(...) instead")
+  @objc public static func call(_ params: [Swift.String : Any]) -> Any
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension IDLiveFaceIAD.FaceIADController {
+  public typealias Completion = (Swift.Result<Foundation.Data, any Swift.Error>) -> Swift.Void
+  convenience public init(ciContext: CoreImage.CIContext = CIContext(), dispatchQueue: Dispatch.DispatchQueue = FaceIADController.defaultDispatchQueue())
+  final public func captureOutput(_ output: AVFoundation.AVCaptureOutput, didOutput sampleBuffer: CoreMedia.CMSampleBuffer, from connection: AVFoundation.AVCaptureConnection)
+  final public func isReady(qualifiedImage: any IDLiveFaceIAD.ImageProtocol, completion: @escaping (Swift.Bool) -> Swift.Void)
+  final public func reset()
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func createIADBundle(payloadSize: IDLiveFaceIAD.PayloadSize = .normal, key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil) throws -> Foundation.Data
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func createIADBundle(payloadSize: IDLiveFaceIAD.PayloadSize = .normal, key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil) async throws -> Foundation.Data
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func createIADBundle(payloadSize: IDLiveFaceIAD.PayloadSize = .normal, key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil, completion: @escaping IDLiveFaceIAD.FaceIADController.Completion)
+  #endif
+  final public func isReady(qualifiedImage: any IDLiveFaceIAD.ImageProtocol) async -> Swift.Bool
+}
+extension IDLiveFaceIAD.FaceIADController {
+  final public class func defaultDispatchQueue() -> Dispatch.DispatchQueue
+}
+extension IDLiveFaceIAD.FaceIADController {
+  public enum PhotoFormat {
+    case png
+    case payloadSize(IDLiveFaceIAD.PayloadSize)
+  }
+  convenience public init(format: IDLiveFaceIAD.FaceIADController.PhotoFormat, ciContext: CoreImage.CIContext = CIContext(), dispatchQueue: Dispatch.DispatchQueue = FaceIADController.defaultDispatchQueue()) throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func createIADBundle(format: IDLiveFaceIAD.FaceIADController.PhotoFormat, key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil) throws -> Foundation.Data
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func createIADBundle(format: IDLiveFaceIAD.FaceIADController.PhotoFormat, key: Foundation.Data? = nil, keyId: Swift.String? = nil, externalMeta: Swift.String? = nil, completion: @escaping (Swift.Result<Foundation.Data, any Swift.Error>) -> Swift.Void)
+  #endif
+}
+@_hasMissingDesignatedInitializers final public class FaceIADController {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class DocIADController {
+  @objc deinit
+}
+public protocol ImageProtocol : AnyObject, IDLiveFaceIAD.Timestampable {
+  var timestamp: Foundation.Date { get }
+  var dimensions: CoreFoundation.CGSize { get }
+  #if compiler(>=5.3) && $NonescapableTypes
+  func jpegData(compressionQuality: Swift.Float) -> Foundation.Data?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func pngData() -> Foundation.Data?
+  #endif
+}
+extension IDLiveFaceIAD.PayloadType : Swift.Equatable {}
+extension IDLiveFaceIAD.PayloadType : Swift.Hashable {}
+extension IDLiveFaceIAD.PayloadType : Swift.RawRepresentable {}
+extension IDLiveFaceIAD.PayloadSize : Swift.Equatable {}
+extension IDLiveFaceIAD.PayloadSize : Swift.Hashable {}
+extension IDLiveFaceIAD.DocIADController.PhotoFormat : Swift.Equatable {}
+extension IDLiveFaceIAD.DocIADController.PhotoFormat : Swift.Hashable {}
+extension IDLiveFaceIAD.CreateBundleError : Swift.Equatable {}
+extension IDLiveFaceIAD.CreateBundleError : Swift.Hashable {}
