@@ -1,5 +1,9 @@
 # Release notes
 
+## v1.10.1
+### Bugfixes
+- Fixed issue with BlinkCard integration
+
 ## v1.10.0
 ### Updates
 
