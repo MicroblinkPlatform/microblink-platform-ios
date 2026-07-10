@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		434901FD2E3BAAC600301D15 /* BlinkCard in Frameworks */ = {isa = PBXBuildFile; productRef = 434901FC2E3BAAC600301D15 /* BlinkCard */; };
-		434901FF2E3BAAC600301D15 /* BlinkIDVerify in Frameworks */ = {isa = PBXBuildFile; productRef = 434901FE2E3BAAC600301D15 /* BlinkIDVerify */; };
-		434902012E3BAAC600301D15 /* BlinkIDVerifyUX in Frameworks */ = {isa = PBXBuildFile; productRef = 434902002E3BAAC600301D15 /* BlinkIDVerifyUX */; };
-		434902032E3BAAC600301D15 /* IDLiveFaceCamera in Frameworks */ = {isa = PBXBuildFile; productRef = 434902022E3BAAC600301D15 /* IDLiveFaceCamera */; };
-		434902052E3BAAC600301D15 /* IDLiveFaceDetection in Frameworks */ = {isa = PBXBuildFile; productRef = 434902042E3BAAC600301D15 /* IDLiveFaceDetection */; };
-		434902072E3BAAC600301D15 /* IDLiveFaceIAD in Frameworks */ = {isa = PBXBuildFile; productRef = 434902062E3BAAC600301D15 /* IDLiveFaceIAD */; };
-		434902092E3BAAC600301D15 /* MicroblinkPlatform in Frameworks */ = {isa = PBXBuildFile; productRef = 434902082E3BAAC600301D15 /* MicroblinkPlatform */; };
+		79468EB330012F8F00596FED /* BlinkCard in Frameworks */ = {isa = PBXBuildFile; productRef = 79468EB230012F8F00596FED /* BlinkCard */; };
+		79468EB530012F8F00596FED /* BlinkCardUX in Frameworks */ = {isa = PBXBuildFile; productRef = 79468EB430012F8F00596FED /* BlinkCardUX */; };
+		79468EB730012F8F00596FED /* BlinkIDVerify in Frameworks */ = {isa = PBXBuildFile; productRef = 79468EB630012F8F00596FED /* BlinkIDVerify */; };
+		79468EB930012F8F00596FED /* BlinkIDVerifyUX in Frameworks */ = {isa = PBXBuildFile; productRef = 79468EB830012F8F00596FED /* BlinkIDVerifyUX */; };
+		79468EBB30012F8F00596FED /* IDLiveFaceCamera in Frameworks */ = {isa = PBXBuildFile; productRef = 79468EBA30012F8F00596FED /* IDLiveFaceCamera */; };
+		79468EBD30012F8F00596FED /* IDLiveFaceDetection in Frameworks */ = {isa = PBXBuildFile; productRef = 79468EBC30012F8F00596FED /* IDLiveFaceDetection */; };
+		79468EBF30012F8F00596FED /* IDLiveFaceIAD in Frameworks */ = {isa = PBXBuildFile; productRef = 79468EBE30012F8F00596FED /* IDLiveFaceIAD */; };
+		79468EC130012F8F00596FED /* MicroblinkPlatform in Frameworks */ = {isa = PBXBuildFile; productRef = 79468EC030012F8F00596FED /* MicroblinkPlatform */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,13 +34,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				434902012E3BAAC600301D15 /* BlinkIDVerifyUX in Frameworks */,
-				434902032E3BAAC600301D15 /* IDLiveFaceCamera in Frameworks */,
-				434902092E3BAAC600301D15 /* MicroblinkPlatform in Frameworks */,
-				434901FD2E3BAAC600301D15 /* BlinkCard in Frameworks */,
-				434902072E3BAAC600301D15 /* IDLiveFaceIAD in Frameworks */,
-				434902052E3BAAC600301D15 /* IDLiveFaceDetection in Frameworks */,
-				434901FF2E3BAAC600301D15 /* BlinkIDVerify in Frameworks */,
+				79468EBD30012F8F00596FED /* IDLiveFaceDetection in Frameworks */,
+				79468EC130012F8F00596FED /* MicroblinkPlatform in Frameworks */,
+				79468EBF30012F8F00596FED /* IDLiveFaceIAD in Frameworks */,
+				79468EB530012F8F00596FED /* BlinkCardUX in Frameworks */,
+				79468EB330012F8F00596FED /* BlinkCard in Frameworks */,
+				79468EB930012F8F00596FED /* BlinkIDVerifyUX in Frameworks */,
+				79468EB730012F8F00596FED /* BlinkIDVerify in Frameworks */,
+				79468EBB30012F8F00596FED /* IDLiveFaceCamera in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,13 +84,14 @@
 			);
 			name = MicroblinkPlatformSampleSwiftUI;
 			packageProductDependencies = (
-				434901FC2E3BAAC600301D15 /* BlinkCard */,
-				434901FE2E3BAAC600301D15 /* BlinkIDVerify */,
-				434902002E3BAAC600301D15 /* BlinkIDVerifyUX */,
-				434902022E3BAAC600301D15 /* IDLiveFaceCamera */,
-				434902042E3BAAC600301D15 /* IDLiveFaceDetection */,
-				434902062E3BAAC600301D15 /* IDLiveFaceIAD */,
-				434902082E3BAAC600301D15 /* MicroblinkPlatform */,
+				79468EB230012F8F00596FED /* BlinkCard */,
+				79468EB430012F8F00596FED /* BlinkCardUX */,
+				79468EB630012F8F00596FED /* BlinkIDVerify */,
+				79468EB830012F8F00596FED /* BlinkIDVerifyUX */,
+				79468EBA30012F8F00596FED /* IDLiveFaceCamera */,
+				79468EBC30012F8F00596FED /* IDLiveFaceDetection */,
+				79468EBE30012F8F00596FED /* IDLiveFaceIAD */,
+				79468EC030012F8F00596FED /* MicroblinkPlatform */,
 			);
 			productName = MicroblinkPlatformSampleSwiftUI;
 			productReference = 43EA96202D95849000A54E45 /* MicroblinkPlatformSampleSwiftUI.app */;
@@ -102,7 +105,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
-				LastUpgradeCheck = 1640;
+				LastUpgradeCheck = 2660;
 				TargetAttributes = {
 					43EA961F2D95849000A54E45 = {
 						CreatedOnToolsVersion = 16.2;
@@ -119,7 +122,7 @@
 			mainGroup = 43EA96172D95849000A54E45;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				434901FB2E3BAAC600301D15 /* XCRemoteSwiftPackageReference "microblink-platform-ios" */,
+				79468EB130012F8F00596FED /* XCRemoteSwiftPackageReference "microblink-platform-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 43EA96212D95849000A54E45 /* Products */;
@@ -363,50 +366,55 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		434901FB2E3BAAC600301D15 /* XCRemoteSwiftPackageReference "microblink-platform-ios" */ = {
+		79468EB130012F8F00596FED /* XCRemoteSwiftPackageReference "microblink-platform-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/MicroblinkPlatform/microblink-platform-ios";
+			repositoryURL = "https://github.com/MicroblinkPlatform/microblink-platform-ios/";
 			requirement = {
 				kind = exactVersion;
-				version = 1.10.0;
+				version = 1.10.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		434901FC2E3BAAC600301D15 /* BlinkCard */ = {
+		79468EB230012F8F00596FED /* BlinkCard */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 434901FB2E3BAAC600301D15 /* XCRemoteSwiftPackageReference "microblink-platform-ios" */;
+			package = 79468EB130012F8F00596FED /* XCRemoteSwiftPackageReference "microblink-platform-ios" */;
 			productName = BlinkCard;
 		};
-		434901FE2E3BAAC600301D15 /* BlinkIDVerify */ = {
+		79468EB430012F8F00596FED /* BlinkCardUX */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 434901FB2E3BAAC600301D15 /* XCRemoteSwiftPackageReference "microblink-platform-ios" */;
+			package = 79468EB130012F8F00596FED /* XCRemoteSwiftPackageReference "microblink-platform-ios" */;
+			productName = BlinkCardUX;
+		};
+		79468EB630012F8F00596FED /* BlinkIDVerify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79468EB130012F8F00596FED /* XCRemoteSwiftPackageReference "microblink-platform-ios" */;
 			productName = BlinkIDVerify;
 		};
-		434902002E3BAAC600301D15 /* BlinkIDVerifyUX */ = {
+		79468EB830012F8F00596FED /* BlinkIDVerifyUX */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 434901FB2E3BAAC600301D15 /* XCRemoteSwiftPackageReference "microblink-platform-ios" */;
+			package = 79468EB130012F8F00596FED /* XCRemoteSwiftPackageReference "microblink-platform-ios" */;
 			productName = BlinkIDVerifyUX;
 		};
-		434902022E3BAAC600301D15 /* IDLiveFaceCamera */ = {
+		79468EBA30012F8F00596FED /* IDLiveFaceCamera */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 434901FB2E3BAAC600301D15 /* XCRemoteSwiftPackageReference "microblink-platform-ios" */;
+			package = 79468EB130012F8F00596FED /* XCRemoteSwiftPackageReference "microblink-platform-ios" */;
 			productName = IDLiveFaceCamera;
 		};
-		434902042E3BAAC600301D15 /* IDLiveFaceDetection */ = {
+		79468EBC30012F8F00596FED /* IDLiveFaceDetection */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 434901FB2E3BAAC600301D15 /* XCRemoteSwiftPackageReference "microblink-platform-ios" */;
+			package = 79468EB130012F8F00596FED /* XCRemoteSwiftPackageReference "microblink-platform-ios" */;
 			productName = IDLiveFaceDetection;
 		};
-		434902062E3BAAC600301D15 /* IDLiveFaceIAD */ = {
+		79468EBE30012F8F00596FED /* IDLiveFaceIAD */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 434901FB2E3BAAC600301D15 /* XCRemoteSwiftPackageReference "microblink-platform-ios" */;
+			package = 79468EB130012F8F00596FED /* XCRemoteSwiftPackageReference "microblink-platform-ios" */;
 			productName = IDLiveFaceIAD;
 		};
-		434902082E3BAAC600301D15 /* MicroblinkPlatform */ = {
+		79468EC030012F8F00596FED /* MicroblinkPlatform */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 434901FB2E3BAAC600301D15 /* XCRemoteSwiftPackageReference "microblink-platform-ios" */;
+			package = 79468EB130012F8F00596FED /* XCRemoteSwiftPackageReference "microblink-platform-ios" */;
 			productName = MicroblinkPlatform;
 		};
 /* End XCSwiftPackageProductDependency section */
