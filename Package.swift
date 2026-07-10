@@ -20,6 +20,10 @@ let package = Package(
             targets: ["BlinkIDVerify"]
         ),
         .library(
+            name: "BlinkCardUX",
+            targets: ["BlinkCardUX"]
+        ),
+        .library(
             name: "BlinkCard",
             targets: ["BlinkCard"]
         ),
@@ -40,8 +44,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "MicroblinkPlatform",
-            url: "https://github.com/MicroblinkPlatform/microblink-platform-ios/releases/download/v1.10.0/MicroblinkPlatform.xcframework.zip",
-            checksum: "c74bd12b7fbbb2cf6deb1fc35b499868717abd78e52bf8d4f852615b4fdca2b8"
+            url: "https://github.com/MicroblinkPlatform/microblink-platform-ios/releases/download/v1.10.1/MicroblinkPlatform.xcframework.zip",
+            checksum: "03430dfaae65f75e4d2597d808bb448c9735c3dff3767ee2ecbc7570ffc1c0f6"
         ),
         .binaryTarget(
             name: "BlinkIDVerifyUX",
@@ -54,8 +58,13 @@ let package = Package(
             checksum:"a14f8ec7f77c156293d176b774b7d0fa3c4a13813d0fe9a4d69f86095e3ef6f9"
         ),
         .binaryTarget(
+            name: "BlinkCardUX",
+            url:"https://github.com/microblink/blinkcard-ios/releases/download/v3000.0.1/BlinkCardUX.xcframework.zip",
+            checksum:"bcd489b60fe6213aa3906333dbcbaf0fdf27464e4918a5c8f8ba635bb09430ef"
+        ),
+        .binaryTarget(
             name: "BlinkCard",
-            url:"https://github.com/blinkcard/blinkcard-ios/releases/download/v3000.0.1/BlinkCard.xcframework.zip",
+            url:"https://github.com/microblink/blinkcard-ios/releases/download/v3000.0.1/BlinkCard.xcframework.zip",
             checksum:"ca0505a4301b512c4024e2869bc211865fc02263452d2809b101fa1b248480d5"
         ),
         .binaryTarget(
