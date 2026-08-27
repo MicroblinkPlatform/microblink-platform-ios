@@ -1,5 +1,8 @@
 # Transition Guide
 
+## v1.10.2
+- No changes
+
 ## v1.10.1
 - No changes
 

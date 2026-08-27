@@ -102,6 +102,7 @@ final public class MicroblinkPlatformServiceSettings {
   final public var verifySubtitleFont: UIKit.UIFont
   final public var buttonCornerRadius: Swift.Double
   final public var localizationBundle: Foundation.Bundle?
+  final public var localizationTableName: Swift.String?
   final public var documentScanAlertTitleColor: SwiftUICore.Color
   final public var documentScanAlertTitleFont: SwiftUICore.Font
   final public var documentScanAlertDescriptionColor: SwiftUICore.Color

@@ -1,5 +1,11 @@
 # Release notes
 
+## v1.10.2
+### Improvements
+- Improved support for setting a custom localization in `MicroblinkPlatformTheme`:
+	- `localizationBundle` - A bundle from the host app containing translations that override the SDK's built-in strings.
+	- `localizationTableName` - Optional strings table name. Leave `nil` to use the default `Localizable` table.
+
 ## v1.10.1
 ### Bugfixes
 - Fixed issue with BlinkCard integration

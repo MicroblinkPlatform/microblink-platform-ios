@@ -4643,6 +4643,126 @@
           },
           {
             "kind": "Var",
+            "name": "localizationTableName",
+            "printedName": "localizationTableName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18MicroblinkPlatform0aB5ThemeC21localizationTableNameSSSgvp",
+            "mangledName": "$s18MicroblinkPlatform0aB5ThemeC21localizationTableNameSSSgvp",
+            "moduleName": "MicroblinkPlatform",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MicroblinkPlatform0aB5ThemeC21localizationTableNameSSSgvg",
+                "mangledName": "$s18MicroblinkPlatform0aB5ThemeC21localizationTableNameSSSgvg",
+                "moduleName": "MicroblinkPlatform",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MicroblinkPlatform0aB5ThemeC21localizationTableNameSSSgvs",
+                "mangledName": "$s18MicroblinkPlatform0aB5ThemeC21localizationTableNameSSSgvs",
+                "moduleName": "MicroblinkPlatform",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18MicroblinkPlatform0aB5ThemeC21localizationTableNameSSSgvM",
+                "mangledName": "$s18MicroblinkPlatform0aB5ThemeC21localizationTableNameSSSgvM",
+                "moduleName": "MicroblinkPlatform",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "documentScanAlertTitleColor",
             "printedName": "documentScanAlertTitleColor",
             "children": [
@@ -8964,28 +9084,28 @@
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseError\/BaseErrorViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 359,
+      "offset": 323,
       "length": 24,
       "value": "\"mb-mp-button-try-again\""
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseLoading\/BaseLoadingView.swift",
       "kind": "StringLiteral",
-      "offset": 97,
+      "offset": 85,
       "length": 20,
       "value": "\"mb-mp-loading-text\""
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseLoading\/BaseLoadingView.swift",
       "kind": "FloatLiteral",
-      "offset": 154,
+      "offset": 142,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/BaseLoading\/BaseLoadingView.swift",
       "kind": "BooleanLiteral",
-      "offset": 192,
+      "offset": 180,
       "length": 5,
       "value": "false"
     },
@@ -9013,7 +9133,7 @@
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/Consent\/ConsentView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5469,
+      "offset": 5168,
       "length": 5,
       "value": "false"
     },
@@ -9048,63 +9168,63 @@
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FinalVerify\/FinalVerifyView.swift",
       "kind": "StringLiteral",
-      "offset": 3249,
+      "offset": 3120,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FinalVerify\/FinalVerifyView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3438,
+      "offset": 3309,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FinalVerify\/FinalVerifyView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3475,
+      "offset": 3346,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FinalVerify\/FinalVerifyView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3521,
+      "offset": 3392,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FinalVerify\/FinalVerifyView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3567,
+      "offset": 3438,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FinalVerify\/FinalVerifyView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3597,
+      "offset": 3468,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FinalVerify\/FinalVerifyView.swift",
       "kind": "Array",
-      "offset": 3619,
+      "offset": 3490,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FinalVerify\/FinalVerifyView.swift",
       "kind": "Array",
-      "offset": 3653,
+      "offset": 3524,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/FinalVerify\/FinalVerifyView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3689,
+      "offset": 3560,
       "length": 5,
       "value": "false"
     },
@@ -9321,28 +9441,28 @@
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/MainScreen\/MainScreenStepsViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1308,
+      "offset": 1272,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/MainScreen\/MainScreenStepsViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1353,
+      "offset": 1317,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/MainScreen\/MainScreenStepsViewModel.swift",
       "kind": "Array",
-      "offset": 1403,
+      "offset": 1367,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/MainScreen\/MainScreenStepsViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1459,
+      "offset": 1423,
       "length": 5,
       "value": "false"
     },
@@ -10035,70 +10155,70 @@
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIDUploadView.swift",
       "kind": "StringLiteral",
-      "offset": 11243,
+      "offset": 11200,
       "length": 872,
       "value": "\"{\n    \"$type\" : \"UploadNonIdDocument\",\n    \"allowedDocuments\" : [\n      {\n        \"allowedFileTypes\" : [\n          \"image\/jpeg\",\n          \"image\/jpg\",\n          \"image\/png\",\n          \"application\/pdf\"\n        ],\n        \"documentType\" : \"FormI20\",\n        \"displayName\" : \"Please upload Form I20\"\n      },\n      {\n        \"allowedFileTypes\" : [\n          \"image\/jpeg\",\n          \"image\/jpg\",\n          \"image\/png\",\n          \"application\/pdf\"\n        ],\n        \"documentType\" : \"FormI94\",\n        \"displayName\" : \"Please upload Form I94\",\n        \"description\" : \"Make sure Form is clear and visible\"\n      }\n    ]\n  }\""
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIDUploadView.swift",
       "kind": "StringLiteral",
-      "offset": 12347,
+      "offset": 12304,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIDUploadView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12547,
+      "offset": 12504,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIDUploadView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12584,
+      "offset": 12541,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIDUploadView.swift",
       "kind": "BooleanLiteral",
-      "offset": 12630,
+      "offset": 12587,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIDUploadView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12676,
+      "offset": 12633,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIDUploadView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12706,
+      "offset": 12663,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIDUploadView.swift",
       "kind": "Array",
-      "offset": 12728,
+      "offset": 12685,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIDUploadView.swift",
       "kind": "Array",
-      "offset": 12762,
+      "offset": 12719,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIDUploadView.swift",
       "kind": "BooleanLiteral",
-      "offset": 12798,
+      "offset": 12755,
       "length": 5,
       "value": "false"
     },
@@ -10147,259 +10267,231 @@
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 1296,
-      "length": 65,
-      "value": "\"Image files or PDF (Max. \""
+      "offset": 1311,
+      "length": 43,
+      "value": "\"mb-mp-upload-id-file-pdf-size-description\""
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 1356,
-      "length": 2,
-      "value": "\" MB)\""
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
-      "kind": "StringLiteral",
-      "offset": 1471,
-      "length": 58,
-      "value": "\"Image files (Max. \""
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
-      "kind": "StringLiteral",
-      "offset": 1524,
-      "length": 2,
-      "value": "\" MB)\""
+      "offset": 1537,
+      "length": 39,
+      "value": "\"mb-mp-upload-id-file-size-description\""
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 2346,
+      "offset": 2451,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 2587,
+      "offset": 2692,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2709,
+      "offset": 2814,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2775,
+      "offset": 2880,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 2856,
+      "offset": 2961,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 2928,
+      "offset": 3033,
       "length": 7,
       "value": "\"%0.1f\""
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 3761,
+      "offset": 3866,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 3811,
+      "offset": 3916,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 4010,
+      "offset": 4115,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 4017,
+      "offset": 4122,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 4068,
+      "offset": 4173,
       "length": 7,
       "value": "\"%0.1f\""
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4716,
+      "offset": 4821,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4897,
+      "offset": 5002,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4944,
+      "offset": 5049,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 5423,
+      "offset": 5528,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 5531,
-      "length": 65,
-      "value": "\"Image files or PDF (Max. \""
+      "offset": 5651,
+      "length": 43,
+      "value": "\"mb-mp-upload-id-file-pdf-size-description\""
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 5591,
-      "length": 2,
-      "value": "\" MB)\""
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
-      "kind": "StringLiteral",
-      "offset": 5706,
-      "length": 58,
-      "value": "\"Image files (Max. \""
-    },
-    {
-      "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
-      "kind": "StringLiteral",
-      "offset": 5759,
-      "length": 2,
-      "value": "\" MB)\""
+      "offset": 5877,
+      "length": 39,
+      "value": "\"mb-mp-upload-id-file-size-description\""
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 6573,
+      "offset": 6783,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6814,
+      "offset": 7024,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 6935,
+      "offset": 7145,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 7000,
+      "offset": 7210,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 7081,
+      "offset": 7291,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 7153,
+      "offset": 7363,
       "length": 7,
       "value": "\"%0.1f\""
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 7754,
+      "offset": 7964,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 7804,
+      "offset": 8014,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 8002,
+      "offset": 8212,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 8009,
+      "offset": 8219,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 8060,
+      "offset": 8270,
       "length": 7,
       "value": "\"%0.1f\""
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 8553,
+      "offset": 8763,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 8730,
+      "offset": 8940,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/NonIdUpload\/NonIdUploadViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 12157,
+      "offset": 12367,
       "length": 5,
       "value": "false"
     },
@@ -10441,7 +10533,7 @@
     {
       "filePath": "\/opt\/jenkins-ios-armini4\/E0\/idv-ios\/MicroblinkPlatform\/MicroblinkPlatform\/StepsContainer\/StepsContainerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 25802,
+      "offset": 26360,
       "length": 5,
       "value": "false"
     },
